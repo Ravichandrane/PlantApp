@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
 
     // MARK: - IBOutle & Variables
     
-    let items = ["Home", "Notification"]
+    let items = ["Status", "", "Notification"]
     var menuView: BTNavigationDropdownMenu!
     
     // MARK: - Views
