@@ -8,10 +8,14 @@
 
 import UIKit
 import Parse
+import BTNavigationDropdownMenu
 
 class HomeViewController: UIViewController {
 
     // MARK: - IBOutle & Variables
+    
+    let items = ["Home", "Notification"]
+    var menuView: BTNavigationDropdownMenu!
     
     // MARK: - Views
     
@@ -24,14 +28,21 @@ class HomeViewController: UIViewController {
     
     func styleView() {
         
-        self.navigationItem.title = "Hello"
+        let menuView = BTNavigationDropdownMenu(title: items.first!, items: items)
+        menuView.maskBackgroundColor = UIColor.blackColor()
+        menuView.cellTextLabelColor = UIColor.whiteColor()
+        menuView.cellSelectionColor = UIColorFromRGBA("13EA6E", alpha: 0.5)
+        menuView.checkMarkImage = UIImage(named: "")
+        menuView.animationDuration = 0.35
+        menuView.maskBackgroundOpacity = 0.8
+        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+        }
         
+        self.navigationItem.titleView = menuView
+
     }
-
     
     
-    
-
-
 }
 
