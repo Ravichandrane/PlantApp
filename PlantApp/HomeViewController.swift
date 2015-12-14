@@ -7,18 +7,30 @@
 //
 
 import UIKit
+import Parse
 
 class HomeViewController: UIViewController {
 
+    // MARK: - IBOutle & Variables
+    
+    // MARK: - Views
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        styleView()
+    }
+    
+    // MARK: - Init Style 
+    
+    func styleView() {
+        
+        self.navigationItem.title = "Hello"
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
+    
+    
 
 
 }

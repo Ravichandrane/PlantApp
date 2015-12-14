@@ -12,6 +12,8 @@
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
 		415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */; };
+		41B3F3721C1F11170022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3711C1F11170022FA34 /* UIColorFromRGBA.swift */; };
+		41B3F3741C1F11FF0022FA34 /* NavigationBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3731C1F11FF0022FA34 /* NavigationBarIcon.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415ACEEA1C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		415ACEEC1C1F0326003611B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B3F3711C1F11170022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
+		41B3F3731C1F11FF0022FA34 /* NavigationBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarIcon.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 		415ACEF61C1F07A6003611B1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				41B3F3711C1F11170022FA34 /* UIColorFromRGBA.swift */,
+				41B3F3731C1F11FF0022FA34 /* NavigationBarIcon.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -266,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B3F3741C1F11FF0022FA34 /* NavigationBarIcon.swift in Sources */,
 				415ACEE31C1F0326003611B1 /* HomeViewController.swift in Sources */,
+				41B3F3721C1F11170022FA34 /* UIColorFromRGBA.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
