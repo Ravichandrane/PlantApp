@@ -11,10 +11,9 @@ import UIKit
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     // MARK: - IBOutlet & Variable
-    @IBOutlet weak var weatherView: UIView!
+
     @IBOutlet weak var plantCollectionView: UICollectionView!
     
-    let nibIdentifier: String = "InformationBar"
     let cellIdentifier = "homeCollectionViewCell"
     
     // MARK: - View

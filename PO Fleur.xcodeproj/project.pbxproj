@@ -20,10 +20,12 @@
 		41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */; };
 		41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */; };
 		41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */; };
-		41BA24581C2019FC00732871 /* InformationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA24571C2019FC00732871 /* InformationBar.xib */; };
-		41BA245C1C201A8800732871 /* InformationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245B1C201A8800732871 /* InformationBar.swift */; };
 		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
 		41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24611C2069FC00732871 /* GameCenterViewController.swift */; };
+		41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24671C20B37700732871 /* OnboardingViewController.swift */; };
+		41BA246A1C20B83500732871 /* Gardient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gardient.swift */; };
+		41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */; };
+		41BA24701C20BED000732871 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246F1C20BED000732871 /* Onboarding.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +45,12 @@
 		41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarIcon.swift; sourceTree = "<group>"; };
 		41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
-		41BA24571C2019FC00732871 /* InformationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationBar.xib; sourceTree = "<group>"; };
-		41BA245B1C201A8800732871 /* InformationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationBar.swift; sourceTree = "<group>"; };
 		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		41BA24611C2069FC00732871 /* GameCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
+		41BA24671C20B37700732871 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		41BA24691C20B83500732871 /* Gardient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gardient.swift; sourceTree = "<group>"; };
+		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		41BA246F1C20BED000732871 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +107,6 @@
 			children = (
 				415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */,
 				415ACEE41C1F0326003611B1 /* Main.storyboard */,
-				41BA24571C2019FC00732871 /* InformationBar.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 		41B3F3A21C1FBB320022FA34 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				41BA246F1C20BED000732871 /* Onboarding.swift */,
 			);
 			name = API;
 			path = Classes/API;
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				41B3F3A51C1FBB3D0022FA34 /* HomeCollectionViewCell.swift */,
+				41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -153,9 +158,8 @@
 		41B3F3A81C1FBB3D0022FA34 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				41B3F3AD1C1FBB3D0022FA34 /* ViewController.swift */,
-				41B3F3A91C1FBB3D0022FA34 /* ContainerView */,
-				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
+				41BA24631C20B33A00732871 /* OnboardingView */,
+				41BA24641C20B34700732871 /* HomeView */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -177,8 +181,8 @@
 				41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */,
 				41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */,
 				41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */,
-				41BA245B1C201A8800732871 /* InformationBar.swift */,
 				41BA245F1C205BEC00732871 /* ShadowView.swift */,
+				41BA24691C20B83500732871 /* Gardient.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -190,6 +194,24 @@
 			);
 			name = Models;
 			path = Classes/Models;
+			sourceTree = "<group>";
+		};
+		41BA24631C20B33A00732871 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				41BA24671C20B37700732871 /* OnboardingViewController.swift */,
+			);
+			name = OnboardingView;
+			sourceTree = "<group>";
+		};
+		41BA24641C20B34700732871 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				41B3F3AD1C1FBB3D0022FA34 /* ViewController.swift */,
+				41B3F3A91C1FBB3D0022FA34 /* ContainerView */,
+				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
+			);
+			name = HomeView;
 			sourceTree = "<group>";
 		};
 		A8DDD837528C8CDEDFD3F665 /* Frameworks */ = {
@@ -272,7 +294,6 @@
 			files = (
 				415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */,
 				415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */,
-				41BA24581C2019FC00732871 /* InformationBar.xib in Resources */,
 				415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,16 +355,19 @@
 			files = (
 				41BA24601C205BEC00732871 /* ShadowView.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
+				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
 				41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,
 				41B3F3B81C1FBB3D0022FA34 /* ViewController.swift in Sources */,
-				41BA245C1C201A8800732871 /* InformationBar.swift in Sources */,
 				41B3F3B71C1FBB3D0022FA34 /* StatusViewController.swift in Sources */,
 				41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */,
+				41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */,
+				41BA246A1C20B83500732871 /* Gardient.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
+				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
 				41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

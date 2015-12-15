@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g5E-AP-cqR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bPA-8t-Fdt">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -63,10 +63,119 @@
             </objects>
             <point key="canvasLocation" x="-551" y="-237"/>
         </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="lGd-Mh-S8Q">
+            <objects>
+                <viewController id="bPA-8t-Fdt" customClass="OnboardingViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xcV-nn-IGv"/>
+                        <viewControllerLayoutGuide type="bottom" id="JdL-v3-J6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBg-Fp-Uo3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aHe-ts-NQY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eDC-3G-5pS">
+                                    <size key="itemSize" width="320" height="568"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingCollectionViewCell" id="4wP-tj-Phc" customClass="OnboardingCollectionViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxa-1b-fde">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-zz-0c9">
+                                                            <rect key="frame" x="90" y="70" width="140" height="36"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hortensia_heureux" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-4w-d6F">
+                                                            <rect key="frame" x="81" y="164" width="158" height="201"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="201" id="7Vr-LG-VkH"/>
+                                                                <constraint firstAttribute="width" constant="158" id="iJu-Kg-wdZ"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come on! added a new plant and give yourself a break." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-qi-6Eh">
+                                                            <rect key="frame" x="30" y="424" width="260" height="41"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="SUW-zz-0c9" firstAttribute="centerX" secondItem="Zxa-1b-fde" secondAttribute="centerX" id="1lc-eZ-1xr"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Sa7-qi-6Eh" secondAttribute="bottom" constant="103" id="3Lc-im-aac"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Sa7-qi-6Eh" secondAttribute="trailing" constant="30" id="8bP-cS-8nG"/>
+                                                        <constraint firstItem="Sa7-qi-6Eh" firstAttribute="leading" secondItem="Zxa-1b-fde" secondAttribute="leading" constant="30" id="CnS-SD-Hqn"/>
+                                                        <constraint firstItem="eoU-4w-d6F" firstAttribute="centerX" secondItem="Zxa-1b-fde" secondAttribute="centerX" id="FVO-AU-v4R"/>
+                                                        <constraint firstItem="Sa7-qi-6Eh" firstAttribute="top" secondItem="eoU-4w-d6F" secondAttribute="bottom" constant="40" id="GtK-Zc-Z4c"/>
+                                                        <constraint firstItem="SUW-zz-0c9" firstAttribute="top" secondItem="Zxa-1b-fde" secondAttribute="top" constant="70" id="eoC-dP-N1y"/>
+                                                        <constraint firstItem="eoU-4w-d6F" firstAttribute="centerY" secondItem="Zxa-1b-fde" secondAttribute="centerY" constant="-20" id="pn5-Kj-ngr"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="GtK-Zc-Z4c"/>
+                                                        </mask>
+                                                    </variation>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Zxa-1b-fde" firstAttribute="top" secondItem="4wP-tj-Phc" secondAttribute="top" id="KM6-Ad-MGl"/>
+                                            <constraint firstItem="Zxa-1b-fde" firstAttribute="leading" secondItem="4wP-tj-Phc" secondAttribute="leading" id="Zlw-G2-i78"/>
+                                            <constraint firstAttribute="bottom" secondItem="Zxa-1b-fde" secondAttribute="bottom" id="f6O-nP-1OM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Zxa-1b-fde" secondAttribute="trailing" id="fBL-ou-aYv"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="onboardingImage" destination="eoU-4w-d6F" id="ksg-gh-Aju"/>
+                                            <outlet property="onboardingText" destination="Sa7-qi-6Eh" id="r4u-nL-0k2"/>
+                                            <outlet property="onboardingTitle" destination="SUW-zz-0c9" id="Vcg-Xh-Ns9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="l7N-1E-Xn7">
+                                <rect key="frame" x="140" y="511" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aHe-ts-NQY" firstAttribute="top" secondItem="cBg-Fp-Uo3" secondAttribute="top" id="GwO-zf-bOQ"/>
+                            <constraint firstItem="l7N-1E-Xn7" firstAttribute="centerX" secondItem="cBg-Fp-Uo3" secondAttribute="centerX" id="a1C-nf-RLg"/>
+                            <constraint firstItem="aHe-ts-NQY" firstAttribute="leading" secondItem="cBg-Fp-Uo3" secondAttribute="leading" id="hRs-en-jKz"/>
+                            <constraint firstItem="JdL-v3-J6h" firstAttribute="top" secondItem="aHe-ts-NQY" secondAttribute="bottom" id="kv8-Xs-VSN"/>
+                            <constraint firstItem="JdL-v3-J6h" firstAttribute="top" secondItem="l7N-1E-Xn7" secondAttribute="bottom" constant="20" id="pp0-gY-MKz"/>
+                            <constraint firstAttribute="trailing" secondItem="aHe-ts-NQY" secondAttribute="trailing" id="zAA-UR-Zat"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="onboardingCollectionView" destination="aHe-ts-NQY" id="4Gs-vC-ate"/>
+                        <outlet property="pageControl" destination="l7N-1E-Xn7" id="EYJ-O6-4sy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDL-qv-gKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1354" y="-237"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yGz-k4-nfO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g5E-AP-cqR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="homeViewNavigation" automaticallyAdjustsScrollViewInsets="NO" id="g5E-AP-cqR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rPG-3T-5Ew">
@@ -546,6 +655,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Hortensia_heureux" width="58" height="71"/>
         <image name="Humidity" width="35" height="36"/>
         <image name="Petit_heureux" width="58" height="74"/>
         <image name="Pin" width="21" height="28"/>
