@@ -11,9 +11,10 @@ import UIKit
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     // MARK: - IBOutlet & Variable
-    
+    @IBOutlet weak var weatherView: UIView!
     @IBOutlet weak var plantCollectionView: UICollectionView!
     
+    let nibIdentifier: String = "InformationBar"
     let cellIdentifier = "homeCollectionViewCell"
     
     // MARK: - View
@@ -23,8 +24,16 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         plantCollectionView.dataSource = self
         plantCollectionView.delegate = self
-        plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
         
+        styleView()
+        
+    }
+    
+    // MARK: - Style view 
+    
+    func styleView() {
+        plantCollectionView.backgroundColor = UIColor.clearColor()
+        plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
     // MARK: - CollectionView DataSource
@@ -51,6 +60,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.size.width, height: 100)
     }
-
+    
+    
 
 }

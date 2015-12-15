@@ -12,7 +12,9 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     // MARK: - IBOutlet & Variable
     
+    @IBOutlet weak var plantStatus: UIImageView!
     @IBOutlet weak var plantName: UILabel!
+    @IBOutlet weak var information: UILabel!
     @IBOutlet weak var overlayView: UIView!
     
     
@@ -38,6 +40,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         
         overlayView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
         plantName.transform = CGAffineTransformMakeScale(scale, scale)
+        information.transform = CGAffineTransformMakeScale(scale, scale)
     
     }
     

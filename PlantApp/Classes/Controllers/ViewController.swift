@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     // MARK: - IBOutle & Variable
     
-    let items = ["Home", "Status", "Notifications"]
+    let items = ["Home", "Game Center", "Notifications"]
     var menuView: BTNavigationDropdownMenu!
     
     @IBOutlet weak var homeView: UIView!
@@ -33,12 +33,14 @@ class ViewController: UIViewController {
     func styleView() {
         
         hideView(false, StatusView: true, notificationView: true)
+        navigationIcon("add_plant", action: "previousView:", target: self, navigationItem: navigationItem, position: "right")
         
         let menuView = BTNavigationDropdownMenu(title: items.first!, items: items)
         menuView.maskBackgroundColor = UIColor.blackColor()
         menuView.cellTextLabelColor = UIColor.whiteColor()
         menuView.cellSelectionColor = UIColorFromRGBA("13EA6E", alpha: 0.5)
         menuView.cellSeparatorColor = UIColor.clearColor()
+        menuView.arrowImage = UIImage(named: "arrowOpen")
         menuView.checkMarkImage = UIImage(named: "")
         menuView.animationDuration = 0.35
         menuView.maskBackgroundOpacity = 0.8

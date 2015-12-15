@@ -20,11 +20,15 @@
 		41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */; };
 		41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */; };
 		41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */; };
+		41BA24581C2019FC00732871 /* InformationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41BA24571C2019FC00732871 /* InformationBar.xib */; };
+		41BA245C1C201A8800732871 /* InformationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245B1C201A8800732871 /* InformationBar.swift */; };
+		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
+		41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24611C2069FC00732871 /* GameCenterViewController.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		415ACEDD1C1F0326003611B1 /* PlantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,11 +38,15 @@
 		41B3F3A71C1FBB3D0022FA34 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		41B3F3AA1C1FBB3D0022FA34 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41B3F3AB1C1FBB3D0022FA34 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatusViewController.swift; path = ContainerView/StatusViewController.swift; sourceTree = "<group>"; };
 		41B3F3AD1C1FBB3D0022FA34 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarIcon.swift; sourceTree = "<group>"; };
 		41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
+		41BA24571C2019FC00732871 /* InformationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InformationBar.xib; sourceTree = "<group>"; };
+		41BA245B1C201A8800732871 /* InformationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationBar.swift; sourceTree = "<group>"; };
+		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		41BA24611C2069FC00732871 /* GameCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,7 +77,7 @@
 		415ACEDE1C1F0326003611B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				415ACEDD1C1F0326003611B1 /* PlantApp.app */,
+				415ACEDD1C1F0326003611B1 /* PO Fleur.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			children = (
 				415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */,
 				415ACEE41C1F0326003611B1 /* Main.storyboard */,
+				41BA24571C2019FC00732871 /* InformationBar.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -144,8 +153,9 @@
 		41B3F3A81C1FBB3D0022FA34 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				41B3F3A91C1FBB3D0022FA34 /* ContainerView */,
 				41B3F3AD1C1FBB3D0022FA34 /* ViewController.swift */,
+				41B3F3A91C1FBB3D0022FA34 /* ContainerView */,
+				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -155,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				41B3F3AA1C1FBB3D0022FA34 /* HomeViewController.swift */,
+				41BA24611C2069FC00732871 /* GameCenterViewController.swift */,
 				41B3F3AB1C1FBB3D0022FA34 /* NotificationViewController.swift */,
-				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
 			);
 			path = ContainerView;
 			sourceTree = "<group>";
@@ -167,6 +177,8 @@
 				41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */,
 				41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */,
 				41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */,
+				41BA245B1C201A8800732871 /* InformationBar.swift */,
+				41BA245F1C205BEC00732871 /* ShadowView.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -200,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415ACEDC1C1F0326003611B1 /* PlantApp */ = {
+		415ACEDC1C1F0326003611B1 /* PO Fleur */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */;
+			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PO Fleur" */;
 			buildPhases = (
 				DD81805569C253E1587F053A /* Check Pods Manifest.lock */,
 				415ACED91C1F0326003611B1 /* Sources */,
@@ -215,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = PlantApp;
+			name = "PO Fleur";
 			productName = PlantApp;
-			productReference = 415ACEDD1C1F0326003611B1 /* PlantApp.app */;
+			productReference = 415ACEDD1C1F0326003611B1 /* PO Fleur.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */;
+			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PO Fleur" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -248,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				415ACEDC1C1F0326003611B1 /* PlantApp */,
+				415ACEDC1C1F0326003611B1 /* PO Fleur */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +272,7 @@
 			files = (
 				415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */,
 				415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */,
+				41BA24581C2019FC00732871 /* InformationBar.xib in Resources */,
 				415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,12 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BA24601C205BEC00732871 /* ShadowView.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
 				41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
+				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,
 				41B3F3B81C1FBB3D0022FA34 /* ViewController.swift in Sources */,
+				41BA245C1C201A8800732871 /* InformationBar.swift in Sources */,
 				41B3F3B71C1FBB3D0022FA34 /* StatusViewController.swift in Sources */,
 				41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
@@ -390,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -428,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -444,7 +460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PO Fleur";
 			};
 			name = Debug;
 		};
@@ -457,14 +473,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "PO Fleur";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */ = {
+		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PO Fleur" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEED1C1F0326003611B1 /* Debug */,
@@ -473,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */ = {
+		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PO Fleur" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEF01C1F0326003611B1 /* Debug */,
