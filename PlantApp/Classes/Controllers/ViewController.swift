@@ -32,6 +32,11 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        POService.getCurrentWeather(37.8267, userLongitude: -122.423) { (response, error) -> () in
+            
+        }
+
     }
     
     // MARK: - Style view

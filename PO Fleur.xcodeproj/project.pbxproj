@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
+		413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413773211C20EEC900B8F704 /* ApiKeys.plist */; };
+		413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413773231C20EF9C00B8F704 /* ValueForApiKey.swift */; };
 		415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415ACEE01C1F0326003611B1 /* AppDelegate.swift */; };
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
+		413773211C20EEC900B8F704 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValueForApiKey.swift; path = ../Helpers/ValueForApiKey.swift; sourceTree = "<group>"; };
 		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				415ACEEC1C1F0326003611B1 /* Info.plist */,
+				413773211C20EEC900B8F704 /* ApiKeys.plist */,
 				415ACEE01C1F0326003611B1 /* AppDelegate.swift */,
 				41B3F3B21C1FBB3D0022FA34 /* Models */,
 				415ACEF21C1F0339003611B1 /* Views */,
@@ -128,6 +133,7 @@
 			children = (
 				41BA246F1C20BED000732871 /* Onboarding.swift */,
 				4137731F1C20ED9500B8F704 /* POService.swift */,
+				413773231C20EF9C00B8F704 /* ValueForApiKey.swift */,
 				41BA24711C20E1AA00732871 /* LocalStore.swift */,
 			);
 			name = API;
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */,
+				413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */,
 				415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */,
 				415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */,
 			);
@@ -373,6 +380,7 @@
 				41B3F3B71C1FBB3D0022FA34 /* StatusViewController.swift in Sources */,
 				41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */,
 				41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */,
+				413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */,
 				41BA246A1C20B83500732871 /* Gardient.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
 				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
