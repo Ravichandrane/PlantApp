@@ -13,10 +13,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     // MARK: - IBOutlet & Variable
 
     @IBOutlet weak var plantCollectionView: UICollectionView!
-    
-    let cellIdentifier = "homeCollectionViewCell"
+    @IBOutlet weak var currentPosition: UILabel!
+    @IBOutlet weak var windSpeed: UILabel!
+    @IBOutlet weak var humidity: UILabel!
+    @IBOutlet weak var temperature: UILabel!
     
     // MARK: - View
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        getWeather()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +32,29 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         plantCollectionView.delegate = self
         
         styleView()
-        
     }
     
-    // MARK: - Style view 
+    // MARK: - Style View
     
     func styleView() {
         plantCollectionView.backgroundColor = UIColor.clearColor()
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
+    }
+    
+    // MARK: - Weather Information
+    
+    func getWeather() {
+        POService.getCurrentWeather(49.035723, userLongitude: 2.478652) { (response, error) -> () in
+            if error != nil {
+                print("error")
+            }else{
+                if response != nil {
+                    self.windSpeed.text = "\(response!.windSpeed) km/h"
+                    self.humidity.text = "\(response!.humidity * 100) %"
+                    self.temperature.text = "\(response!.temperature)°"
+                }
+            }
+        }
     }
     
     // MARK: - CollectionView DataSource & Delegate
@@ -54,12 +76,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HomeCollectionViewCell.cellIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        
         let statusViewController = storyboard?.instantiateViewControllerWithIdentifier("statusView") as! StatusViewController
         self.navigationController?.pushViewController(statusViewController, animated: true)
     }

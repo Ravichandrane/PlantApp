@@ -14,6 +14,8 @@ class NotificationTableViewCell: UITableViewCell {
     
     @IBOutlet weak var notificationDate: UILabel!
     @IBOutlet weak var detailNotification: UILabel!
+    
+    static let cellIdentifier = "notificationTableViewCell"
 
     // MARK: Awake
     

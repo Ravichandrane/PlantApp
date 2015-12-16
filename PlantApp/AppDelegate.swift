@@ -27,8 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().translucent = false
         
         // Init Parse
-        
-        Parse.setApplicationId("ueCOfDXzBxiaF8WtBvbZZ6XzPfNdNOLLc2WHNQyN", clientKey: "eyXFTMo6pDdtq0itfyhlcQc1l2VF7FTb9hEjhTFn")
+        let appId = valueForAPIKey(keyname: "PARSE_APP")
+        let clientKey = valueForAPIKey(keyname: "PARSE_CLIENT_KEY")
+        Parse.setApplicationId(appId, clientKey: clientKey)
         
         // If it's the first time show the OnboardingView else show the HomeView
         

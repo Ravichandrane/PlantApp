@@ -16,6 +16,8 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var onboardingImage: UIImageView!
     @IBOutlet weak var onboardingText: UILabel!
     
+    static  let cellIdentifier = "onboardingCollectionViewCell"
+    
     // MARK: - Awake
     
     override func awakeFromNib() {
@@ -35,10 +37,11 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     func parseData(data: AnyObject) {
         
         let title = data["title"] as! String
-        //let image = data["image"] as? String
+        let image = data["image"] as? String
         let textDetail = data["text"] as! String
         
         onboardingTitle.text = title.uppercaseString
+        onboardingImage.image = UIImage(named: image!)
         onboardingText.text = textDetail
     
     }

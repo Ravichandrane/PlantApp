@@ -1,5 +1,5 @@
 //
-//  Gardient.swift
+//  Gradient.swift
 //  PO Fleur
 //
 //  Created by Ravichandrane Rajendran on 15/12/15.

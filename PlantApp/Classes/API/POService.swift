@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-
+import SwiftyJSON
 
 struct POService {
     
@@ -31,19 +31,38 @@ struct POService {
     
     // MARK: - Get current Weather
     
-    static func getCurrentWeather(userLatitude: Double, userLongitude: Double, completionHandler:(response: String, error: String) -> ()) {
+    static func getCurrentWeather(userLatitude: Double, userLongitude: Double, completionHandler:(response: Weather?, error: NSError?) -> ()) {
         
         let urlString = baseUrl + Path.WeatherGeoloc(lat: userLatitude, lng: userLongitude).description
+        let parameters = [
+            "units" : "si"
+        ]
         
-        Alamofire.request(.GET, urlString).responseJSON { (response) -> Void in
-            print(response)
+        Alamofire.request(.GET, urlString, parameters: parameters).responseJSON { (response) -> Void in
+            
+            switch response.result {
+                case .Success(let value):
+                    
+                    let jsonData = JSON(value)
+                    let data = jsonData["currently"]
+                    let temperature = data["temperature"].int
+                    let humidity = data["humidity"].double 
+                    let windSpeed = data["windSpeed"].double
+                    let cloudCover = data["cloudCover"].double
+                    
+                    let setValue = Weather (temperature: temperature, humidity: humidity, windSpeed: windSpeed, cloudCover: cloudCover)
+                    
+                    completionHandler(response: setValue, error: nil)
+                break
+                case .Failure(let error):
+                    completionHandler(response: nil, error: error)
+                break
+            }
+            
         }
         
     }
     
-    
-    
-    
-    
+
     
 }

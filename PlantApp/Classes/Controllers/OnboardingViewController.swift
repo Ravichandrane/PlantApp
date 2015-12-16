@@ -14,10 +14,9 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var onboardingCollectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    let cellIdentifier = "onboardingCollectionViewCell"
-    var onboardingViewData: [[String:AnyObject]] = []
     @IBOutlet weak var startButton: UIButton!
-    
+    var onboardingViewData: [[String:AnyObject]] = []
+
     // MARK: - View
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -103,7 +102,7 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! OnboardingCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(OnboardingCollectionViewCell.cellIdentifier, forIndexPath: indexPath) as! OnboardingCollectionViewCell
         let data = onboardingViewData[indexPath.row]
         cell.parseData(data)
         cell.backgroundColor = UIColor.clearColor()

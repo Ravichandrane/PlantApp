@@ -63,6 +63,113 @@
             </objects>
             <point key="canvasLocation" x="-551" y="-237"/>
         </scene>
+        <!--Add Plant View Controller-->
+        <scene sceneID="5ye-Rq-w9g">
+            <objects>
+                <viewController storyboardIdentifier="addView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qfw-vO-HEK" customClass="AddPlantViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sWw-G3-cMN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ful-7z-lxJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wex-2l-dhg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jGI-MQ-5KL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="odJ-sy-Ler">
+                                    <size key="itemSize" width="120" height="140"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addCollectionViewCell" id="kK2-Af-v57" customClass="AddPlantCollectionViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdl-2y-n0r">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Petit_heureux" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-Oc-4yX">
+                                                            <rect key="frame" x="31" y="23" width="58" height="74"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tZ-S8-IDn">
+                                                            <rect key="frame" x="44" y="107" width="33" height="17"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="6tZ-S8-IDn" firstAttribute="centerX" secondItem="Tdl-2y-n0r" secondAttribute="centerX" id="4d9-In-f64"/>
+                                                        <constraint firstItem="YPb-Oc-4yX" firstAttribute="centerX" secondItem="Tdl-2y-n0r" secondAttribute="centerX" id="O9Z-sv-xaE"/>
+                                                        <constraint firstItem="YPb-Oc-4yX" firstAttribute="centerY" secondItem="Tdl-2y-n0r" secondAttribute="centerY" constant="-10" id="T41-LN-4t8"/>
+                                                        <constraint firstItem="6tZ-S8-IDn" firstAttribute="top" secondItem="YPb-Oc-4yX" secondAttribute="bottom" constant="10" id="aBS-zH-c2K"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.08235294118" green="0.91372549020000005" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Tdl-2y-n0r" firstAttribute="top" secondItem="kK2-Af-v57" secondAttribute="top" id="8oX-ss-Yt0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Tdl-2y-n0r" secondAttribute="bottom" id="B20-XT-fzv"/>
+                                            <constraint firstItem="Tdl-2y-n0r" firstAttribute="leading" secondItem="kK2-Af-v57" secondAttribute="leading" id="SVO-Lu-Su4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Tdl-2y-n0r" secondAttribute="trailing" id="swA-NB-Lmf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="viewCell" destination="Tdl-2y-n0r" id="8wV-Rs-wS8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jGI-MQ-5KL" firstAttribute="leading" secondItem="Wex-2l-dhg" secondAttribute="leading" id="FyI-tK-E4V"/>
+                            <constraint firstAttribute="trailing" secondItem="jGI-MQ-5KL" secondAttribute="trailing" id="KVp-xv-WB3"/>
+                            <constraint firstItem="jGI-MQ-5KL" firstAttribute="top" secondItem="Wex-2l-dhg" secondAttribute="top" id="NI1-fO-8Vu"/>
+                            <constraint firstItem="Ful-7z-lxJ" firstAttribute="top" secondItem="jGI-MQ-5KL" secondAttribute="bottom" id="n6K-6m-zx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eoy-bg-r6A"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="addPlantCollectionView" destination="jGI-MQ-5KL" id="vBp-5I-cK0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beh-2J-Vkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="-237"/>
+        </scene>
+        <!--Create Plant View Controller-->
+        <scene sceneID="w7E-3y-3AK">
+            <objects>
+                <viewController storyboardIdentifier="createPlant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xj-4b-zSL" customClass="CreatePlantViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G0e-Ui-Ypu"/>
+                        <viewControllerLayoutGuide type="bottom" id="eW9-1V-FTK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s7C-SY-5Za">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="4jc-q5-7jm" kind="unwind" identifier="backToAddPlantView" unwindAction="backAddPlantView:" id="356-v1-CSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdp-nr-235" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="4jc-q5-7jm" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="-237"/>
+        </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="lGd-Mh-S8Q">
             <objects>
@@ -97,20 +204,16 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-zz-0c9">
                                                             <rect key="frame" x="90" y="70" width="140" height="36"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hortensia_heureux" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-4w-d6F">
-                                                            <rect key="frame" x="81" y="164" width="158" height="201"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="201" id="7Vr-LG-VkH"/>
-                                                                <constraint firstAttribute="width" constant="158" id="iJu-Kg-wdZ"/>
-                                                            </constraints>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-4w-d6F">
+                                                            <rect key="frame" x="97" y="197" width="126" height="134"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come on! added a new plant and give yourself a break." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-qi-6Eh">
                                                             <rect key="frame" x="30" y="424" width="260" height="41"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -373,7 +476,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentPosition" destination="8la-eR-P0n" id="dUU-VN-JmZ"/>
+                        <outlet property="humidity" destination="ZER-xp-Snr" id="GpS-Wa-Kwp"/>
                         <outlet property="plantCollectionView" destination="IVC-JS-Tr7" id="erZ-br-jE1"/>
+                        <outlet property="temperature" destination="79c-ba-NIQ" id="dGg-7f-MKk"/>
+                        <outlet property="windSpeed" destination="c4I-zl-exl" id="tBn-8Q-Joe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTB-7B-TZz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,13 +508,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgZ-Cs-cXF">
                                                 <rect key="frame" x="43" y="13" width="21" height="22"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wos-nR-JeA">
                                                 <rect key="frame" x="33" y="40" width="41" height="15"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -432,13 +539,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctV-uN-bYR">
                                                 <rect key="frame" x="43" y="13" width="21" height="22"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="So1-sZ-XTD">
                                                 <rect key="frame" x="29" y="40" width="50" height="15"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -463,13 +570,13 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR6-gf-Ojq">
                                                 <rect key="frame" x="43" y="13" width="21" height="22"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunlight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cI2-kx-d3o">
                                                 <rect key="frame" x="31" y="40" width="46" height="15"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -566,14 +673,6 @@
                     <view key="view" contentMode="scaleToFill" id="xb2-oa-aNy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FS-fP-BOQ">
-                                <rect key="frame" x="109" y="273" width="102" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -611,13 +710,13 @@
                                                         <constraint firstAttribute="height" constant="15" id="fWk-YC-UVO"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCe-jr-PON">
                                                     <rect key="frame" x="20" y="40" width="250" height="24"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yMW-Id-RBP">
@@ -674,11 +773,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Hortensia_heureux" width="58" height="71"/>
         <image name="Humidity" width="35" height="36"/>
         <image name="Petit_heureux" width="58" height="74"/>
         <image name="Pin" width="21" height="28"/>
         <image name="Soleil" width="62" height="62"/>
         <image name="Wind" width="52" height="26"/>
+        <image name="welcome" width="126" height="134"/>
     </resources>
 </document>

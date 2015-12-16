@@ -12,25 +12,25 @@ var onboardingData: [[String:AnyObject]] = [
     [
         "id": 1,
         "title": "welcome!",
-        "image": "",
+        "image": "welcome",
         "text": "Come on! added a new plant and give yourself a break."
     ],
     [
         "id": 2,
-        "title": "Localization",
-        "image": "",
+        "title": "localization",
+        "image": "geoloc",
         "text": "We calculate the best for your plant. Turn on the localization for PO Fleur."
     ],
     [
         "id": 3,
-        "title": "Notifications",
-        "image": "",
+        "title": "notifications",
+        "image": "notifs",
         "text": "No problem! your plant will survive thanks to notifications."
     ],
     [
         "id": 4,
-        "title": "Master of plants",
-        "image": "",
+        "title": "master of plants",
+        "image": "medals",
         "text": "Be the best of friends to have the best plant. You are a great gardener!"
     ]
 ]

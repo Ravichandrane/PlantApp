@@ -10,6 +10,10 @@
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
 		413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413773211C20EEC900B8F704 /* ApiKeys.plist */; };
 		413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413773231C20EF9C00B8F704 /* ValueForApiKey.swift */; };
+		4143846D1C215940005F2CD0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143846C1C215940005F2CD0 /* Weather.swift */; };
+		414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */; };
+		414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */; };
+		4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */; };
 		415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415ACEE01C1F0326003611B1 /* AppDelegate.swift */; };
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
@@ -26,7 +30,7 @@
 		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
 		41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24611C2069FC00732871 /* GameCenterViewController.swift */; };
 		41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24671C20B37700732871 /* OnboardingViewController.swift */; };
-		41BA246A1C20B83500732871 /* Gardient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gardient.swift */; };
+		41BA246A1C20B83500732871 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gradient.swift */; };
 		41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */; };
 		41BA24701C20BED000732871 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246F1C20BED000732871 /* Onboarding.swift */; };
 		41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24711C20E1AA00732871 /* LocalStore.swift */; };
@@ -36,7 +40,11 @@
 /* Begin PBXFileReference section */
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
 		413773211C20EEC900B8F704 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
-		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ValueForApiKey.swift; path = ../Helpers/ValueForApiKey.swift; sourceTree = "<group>"; };
+		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueForApiKey.swift; sourceTree = "<group>"; };
+		4143846C1C215940005F2CD0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
+		414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlantViewController.swift; sourceTree = "<group>"; };
 		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +63,7 @@
 		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		41BA24611C2069FC00732871 /* GameCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameCenterViewController.swift; sourceTree = "<group>"; };
 		41BA24671C20B37700732871 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		41BA24691C20B83500732871 /* Gardient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gardient.swift; sourceTree = "<group>"; };
+		41BA24691C20B83500732871 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		41BA246F1C20BED000732871 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		41BA24711C20E1AA00732871 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = ../Helpers/LocalStore.swift; sourceTree = "<group>"; };
@@ -76,6 +84,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		414384701C21BC6A005F2CD0 /* StatusView */ = {
+			isa = PBXGroup;
+			children = (
+				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
+			);
+			name = StatusView;
+			sourceTree = "<group>";
+		};
+		414384711C21BCA8005F2CD0 /* AddView */ = {
+			isa = PBXGroup;
+			children = (
+				414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */,
+			);
+			name = AddView;
+			sourceTree = "<group>";
+		};
+		414384781C21C677005F2CD0 /* CreateView */ = {
+			isa = PBXGroup;
+			children = (
+				4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */,
+			);
+			name = CreateView;
+			sourceTree = "<group>";
+		};
 		415ACED41C1F0326003611B1 = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +163,8 @@
 		41B3F3A21C1FBB320022FA34 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				41BA246F1C20BED000732871 /* Onboarding.swift */,
 				4137731F1C20ED9500B8F704 /* POService.swift */,
-				413773231C20EF9C00B8F704 /* ValueForApiKey.swift */,
+				41BA246F1C20BED000732871 /* Onboarding.swift */,
 				41BA24711C20E1AA00732871 /* LocalStore.swift */,
 			);
 			name = API;
@@ -155,6 +186,7 @@
 			children = (
 				41B3F3A51C1FBB3D0022FA34 /* HomeCollectionViewCell.swift */,
 				41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */,
+				414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -172,6 +204,9 @@
 			children = (
 				41BA24631C20B33A00732871 /* OnboardingView */,
 				41BA24641C20B34700732871 /* HomeView */,
+				414384701C21BC6A005F2CD0 /* StatusView */,
+				414384711C21BCA8005F2CD0 /* AddView */,
+				414384781C21C677005F2CD0 /* CreateView */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -191,10 +226,11 @@
 			isa = PBXGroup;
 			children = (
 				41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */,
+				413773231C20EF9C00B8F704 /* ValueForApiKey.swift */,
 				41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */,
 				41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */,
 				41BA245F1C205BEC00732871 /* ShadowView.swift */,
-				41BA24691C20B83500732871 /* Gardient.swift */,
+				41BA24691C20B83500732871 /* Gradient.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -203,6 +239,7 @@
 		41B3F3B21C1FBB3D0022FA34 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4143846C1C215940005F2CD0 /* Weather.swift */,
 			);
 			name = Models;
 			path = Classes/Models;
@@ -221,7 +258,6 @@
 			children = (
 				41B3F3AD1C1FBB3D0022FA34 /* ViewController.swift */,
 				41B3F3A91C1FBB3D0022FA34 /* ContainerView */,
-				41B3F3AC1C1FBB3D0022FA34 /* StatusViewController.swift */,
 			);
 			name = HomeView;
 			sourceTree = "<group>";
@@ -370,18 +406,22 @@
 				41BA24601C205BEC00732871 /* ShadowView.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
 				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
+				4143846D1C215940005F2CD0 /* Weather.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
 				41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */,
 				41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
+				414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,
+				414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */,
+				4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */,
 				41B3F3B81C1FBB3D0022FA34 /* ViewController.swift in Sources */,
 				41B3F3B71C1FBB3D0022FA34 /* StatusViewController.swift in Sources */,
 				41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */,
 				41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */,
 				413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */,
-				41BA246A1C20B83500732871 /* Gardient.swift in Sources */,
+				41BA246A1C20B83500732871 /* Gradient.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
 				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
 				41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */,

@@ -17,6 +17,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var information: UILabel!
     @IBOutlet weak var overlayView: UIView!
     
+    static let cellIdentifier = "homeCollectionViewCell"
+    
     // MARK: - Awake
     
     override func awakeFromNib() {

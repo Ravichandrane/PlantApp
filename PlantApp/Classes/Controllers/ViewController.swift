@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Parse
 import BTNavigationDropdownMenu
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
@@ -33,10 +32,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        POService.getCurrentWeather(37.8267, userLongitude: -122.423) { (response, error) -> () in
-            
-        }
-
     }
     
     // MARK: - Style view
@@ -44,7 +39,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     func styleView() {
         
         hideView(false, StatusView: true, notificationView: true)
-        navigationIcon("add_plant", action: "previousView:", target: self, navigationItem: navigationItem, position: "right")
+        navigationIcon("add_plant", action: "addPlant:", target: self, navigationItem: navigationItem, position: "right")
         
         let menuView = BTNavigationDropdownMenu(title: items.first!, items: items)
         menuView.maskBackgroundColor = UIColor.blackColor()
@@ -72,6 +67,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     // MARK: - Function
+    
+    func addPlant(sender: UIButton) {
+        let addViewController = storyboard?.instantiateViewControllerWithIdentifier("addView")
+        let nav = UINavigationController(rootViewController: addViewController!)
+        self.presentViewController(nav, animated: true, completion: nil)
+    }
     
     func hideView(homeView: Bool, StatusView: Bool, notificationView: Bool) {
         self.homeView.hidden = homeView

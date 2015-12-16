@@ -13,7 +13,6 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
     // MARK: - IBOutle & Variable
     
     @IBOutlet weak var notificationTableView: UITableView!
-    let cellIdentifier = "notificationTableViewCell"
 
     // MARK: - View
     
@@ -46,7 +45,7 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
     }
         
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! NotificationTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(NotificationTableViewCell.cellIdentifier, forIndexPath: indexPath) as! NotificationTableViewCell
         
         cell.selectionStyle = .None
         cell.backgroundColor = UIColor.clearColor()
