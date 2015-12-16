@@ -14,6 +14,9 @@
 		414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */; };
 		414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */; };
 		4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */; };
+		4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847D1C21DAD2005F2CD0 /* CustomElement.swift */; };
+		414384801C220902005F2CD0 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847F1C220902005F2CD0 /* LocationService.swift */; };
+		414384821C2226D2005F2CD0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384811C2226D2005F2CD0 /* AlertView.swift */; };
 		415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415ACEE01C1F0326003611B1 /* AppDelegate.swift */; };
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantCollectionViewCell.swift; sourceTree = "<group>"; };
 		4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlantViewController.swift; sourceTree = "<group>"; };
+		4143847D1C21DAD2005F2CD0 /* CustomElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElement.swift; sourceTree = "<group>"; };
+		4143847F1C220902005F2CD0 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -231,6 +237,9 @@
 				41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */,
 				41BA245F1C205BEC00732871 /* ShadowView.swift */,
 				41BA24691C20B83500732871 /* Gradient.swift */,
+				4143847D1C21DAD2005F2CD0 /* CustomElement.swift */,
+				4143847F1C220902005F2CD0 /* LocationService.swift */,
+				414384811C2226D2005F2CD0 /* AlertView.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -314,6 +323,11 @@
 				TargetAttributes = {
 					415ACEDC1C1F0326003611B1 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -404,7 +418,9 @@
 			files = (
 				413773201C20ED9500B8F704 /* POService.swift in Sources */,
 				41BA24601C205BEC00732871 /* ShadowView.swift in Sources */,
+				414384801C220902005F2CD0 /* LocationService.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
+				4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */,
 				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
 				4143846D1C215940005F2CD0 /* Weather.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
@@ -425,6 +441,7 @@
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
 				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
 				41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */,
+				414384821C2226D2005F2CD0 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

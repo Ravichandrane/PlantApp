@@ -26,12 +26,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         super.viewWillAppear(true)
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.enabled = true
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "autorizationDenied", name: "AuthorizationDenied", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "airplaneMode", name: "AirplaneMode", object: nil)
         styleView()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        LocationService.sharedInstance.startUpdatingLocation()
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "AuthorizationDenied", object: nil)
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "AirplaneMode", object: nil)
     }
     
     // MARK: - Style view
@@ -78,6 +85,16 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         self.homeView.hidden = homeView
         self.statusView.hidden = StatusView
         self.notificationView.hidden = notificationView
+    }
+    
+    // MARK: - Action
+    
+    func autorizationDenied() {
+        showSimpleAlertWithSettings("Background Location Access Disabled", message: "In order to be get your current weather and save your plant life, please open this app's settings and set location access to 'Always'.", viewController: self)
+    }
+    
+    func airplaneMode() {
+       showSimpleAlertWithSettings("Turn Off Airplane Mode or Use Wi-Fi to Access Data", message: "", viewController: self)
     }
     
     // MARK: - Unwind

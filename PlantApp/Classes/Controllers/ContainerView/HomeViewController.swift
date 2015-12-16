@@ -30,8 +30,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         plantCollectionView.dataSource = self
         plantCollectionView.delegate = self
-        
         styleView()
+    
     }
     
     // MARK: - Style View

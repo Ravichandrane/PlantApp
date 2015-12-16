@@ -23,7 +23,7 @@ struct LocalStore {
     static func isFirstTime() -> Bool? {
         return userDefault.boolForKey("isFirstTime")
     }
-    
+        
     // MARK: - Clean NSUserDefaults
     
     static func cleanUser() {
