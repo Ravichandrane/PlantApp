@@ -10,7 +10,7 @@ import UIKit
 import Parse
 import BTNavigationDropdownMenu
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     // MARK: - IBOutle & Variable
     
@@ -25,6 +25,8 @@ class ViewController: UIViewController {
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.enabled = true
         styleView()
     }
     
@@ -71,6 +73,10 @@ class ViewController: UIViewController {
         self.statusView.hidden = StatusView
         self.notificationView.hidden = notificationView
     }
+    
+    // MARK: - Unwind
+    
+    @IBAction func backLoginView(unwindSegue: UIStoryboardSegue) {}
     
 }
 

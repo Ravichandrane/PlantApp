@@ -35,7 +35,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
-    // MARK: - CollectionView DataSource
+    // MARK: - CollectionView DataSource & Delegate
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
@@ -45,21 +45,24 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         return 10
     }
     
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width, height: 100)
+    }
+    
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         return cell
     }
     
-    // MARK: - CollectionViewDelegate
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 0
-    }
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width, height: 100)
+        let statusViewController = storyboard?.instantiateViewControllerWithIdentifier("statusView") as! StatusViewController
+        self.navigationController?.pushViewController(statusViewController, animated: true)
     }
-    
     
 
 }

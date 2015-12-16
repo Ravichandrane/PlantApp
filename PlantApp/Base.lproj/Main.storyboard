@@ -383,7 +383,7 @@
         <!--Status View Controller-->
         <scene sceneID="qK0-uZ-F80">
             <objects>
-                <viewController storyboardIdentifier="StatusView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NsL-wR-adr" customClass="StatusViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statusView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NsL-wR-adr" customClass="StatusViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YY8-FN-ZIy"/>
                         <viewControllerLayoutGuide type="bottom" id="80f-sb-hIn"/>
@@ -509,10 +509,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glr-eM-prW">
                                         <rect key="frame" x="135" y="400" width="50" height="50"/>
                                         <color key="backgroundColor" red="0.082352941176470587" green="0.9137254901960784" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="NgQ-So-1Wp"/>
                                             <constraint firstAttribute="height" constant="50" id="YQh-e8-SAT"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CeS-eL-Mkh" appends="YES" id="CwN-GR-tHg"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -537,9 +541,17 @@
                     <connections>
                         <outlet property="informationBar" destination="HTD-44-tMu" id="gfz-kb-lov"/>
                         <outlet property="statusView" destination="eQZ-Zc-Ijf" id="710-X0-6IN"/>
+                        <outlet property="toWater" destination="Glr-eM-prW" id="zWz-B2-an6"/>
+                        <segue destination="214-zX-Zq1" kind="unwind" identifier="backToView" unwindAction="backLoginView:" id="Gy5-n5-tL9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQy-ek-XVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="214-zX-Zq1" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="CeS-eL-Mkh">
+                    <connections>
+                        <action selector="toWaterAction:" destination="NsL-wR-adr" id="gHv-OP-wkn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-961" y="1137"/>
         </scene>

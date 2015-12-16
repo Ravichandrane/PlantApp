@@ -1,4 +1,6 @@
 .DS_Store
+ApiKeys.plist
+
 
 git remote add origin https://github.com/Ravichandrane/PlantApp.git
 # Created by https://www.gitignore.io/api/swift

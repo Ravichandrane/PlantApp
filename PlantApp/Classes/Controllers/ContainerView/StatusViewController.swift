@@ -14,6 +14,7 @@ class StatusViewController: UIViewController {
     
     @IBOutlet weak var informationBar: UIView!
     @IBOutlet weak var statusView: UIView!
+    @IBOutlet weak var toWater: UIView!
     
     // MARK: - View
     
@@ -25,9 +26,22 @@ class StatusViewController: UIViewController {
     // MARK: - Style view
     
     func styleView() {
+        self.navigationItem.title = "Plant info"
+        navigationIcon("BackBtn", action: "previousView:", target: self, navigationItem: navigationItem, position: "left")
         statusView.backgroundColor = UIColor.clearColor()
         ShadowView(informationBar)
+        
+        toWater.layer.cornerRadius = toWater.frame.width / 2
+        toWater.clipsToBounds = true
     }
     
+    // MARK: - Action
+    @IBAction func toWaterAction(sender: UITapGestureRecognizer) {
+        print("water ++")
+    }
+    
+    func previousView(sender: UIButton) {
+        self.performSegueWithIdentifier("backToView", sender: self)
+    }
 
 }
