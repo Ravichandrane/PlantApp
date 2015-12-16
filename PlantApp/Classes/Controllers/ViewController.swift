@@ -22,10 +22,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var notificationView: UIView!
     
     // MARK: - View
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        styleView()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        styleView()
     }
     
     // MARK: - Style view

@@ -26,6 +26,7 @@
 		41BA246A1C20B83500732871 /* Gardient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gardient.swift */; };
 		41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */; };
 		41BA24701C20BED000732871 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246F1C20BED000732871 /* Onboarding.swift */; };
+		41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24711C20E1AA00732871 /* LocalStore.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		41BA24691C20B83500732871 /* Gardient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gardient.swift; sourceTree = "<group>"; };
 		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		41BA246F1C20BED000732871 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		41BA24711C20E1AA00732871 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */,
 				41BA245F1C205BEC00732871 /* ShadowView.swift */,
 				41BA24691C20B83500732871 /* Gardient.swift */,
+				41BA24711C20E1AA00732871 /* LocalStore.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -358,6 +361,7 @@
 				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
 				41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */,
+				41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,

@@ -16,6 +16,7 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var pageControl: UIPageControl!
     let cellIdentifier = "onboardingCollectionViewCell"
     var onboardingViewData: [[String:AnyObject]] = []
+    @IBOutlet weak var startButton: UIButton!
     
     // MARK: - View
     
@@ -29,6 +30,12 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
         self.view.layer.insertSublayer(backgroundColor, atIndex: 0)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        startButton.alpha = 0;
+        startButton.enabled = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,9 +47,20 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
         onboardingCollectionView.bounces = false
         
         onboardingViewData = onboardingData
-        pageControl.numberOfPages = onboardingViewData.count
-        pageControl.pageIndicatorTintColor = UIColorFromRGBA("2F3043", alpha: 1.0)
         
+        styleView()
+    }
+    
+    // MARK: - Style View
+    
+    func styleView() {
+        pageControl.numberOfPages = onboardingViewData.count
+        pageControl.pageIndicatorTintColor = UIColorFromRGBA("2F3043", alpha: 0.5)
+        startButton.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 14)
+        startButton.titleLabel?.textColor = UIColorFromRGBA("2F3043", alpha: 1.0)
+        startButton.setAttributedTitle(NSAttributedString(string: "Lets go!".uppercaseString), forState: UIControlState.Normal)
+        
+        startButton.addTarget(self, action: "startAdventure:", forControlEvents: .TouchUpInside)
     }
     
     // MARK: - ScrollView Delegate
@@ -53,6 +71,12 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
         let currentPage = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         
         pageControl.currentPage = Int(currentPage)
+        
+        if currentPage == 3 {
+            hideStartButton(1.0, enabled: true)
+        }else{
+            hideStartButton(0, enabled: false)
+        }
         
     }
     
@@ -89,7 +113,24 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     
     // MARK: - Fonction
     
+    func hideStartButton(alpha: CGFloat, enabled: Bool) {
+        UIView.animateWithDuration(0.5) { () -> Void in
+            self.startButton.alpha = alpha
+            self.startButton.enabled = enabled
+        }
+    }
+    
     // MARK: - Action
+    
+    func startAdventure(sender: UIButton) {
+        
+        let homeViewController = storyboard?.instantiateViewControllerWithIdentifier("homeViewNavigation")
+        homeViewController?.modalTransitionStyle = .CrossDissolve
+        self.presentViewController(homeViewController!, animated: true, completion: nil)
+        
+        LocalStore.isFirstTime(true)
+        
+    }
     
 
 }

@@ -15,15 +15,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // Override point for customization after application launch.
-                        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         UINavigationBar.appearance().barStyle = .Black
         UINavigationBar.appearance().barTintColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
         UINavigationBar.appearance().translucent = false
         
+        // Init Parse
+        
         Parse.setApplicationId("ueCOfDXzBxiaF8WtBvbZZ6XzPfNdNOLLc2WHNQyN", clientKey: "eyXFTMo6pDdtq0itfyhlcQc1l2VF7FTb9hEjhTFn")
+        
+        // If it's the first time show the OnboardingView else show the HomeView
+        
+        let OnboardingViewControlelr = storyboard.instantiateViewControllerWithIdentifier("onboardingView")
+        let HomeViewController = storyboard.instantiateViewControllerWithIdentifier("homeViewNavigation")
+        
+        if LocalStore.isFirstTime() == true {
+            if self.window != nil {
+                self.window!.rootViewController = HomeViewController
+            }
+        }else{
+            if self.window != nil {
+                self.window!.rootViewController = OnboardingViewControlelr
+            }
+        }
+        
+        
         return true
     }
 
