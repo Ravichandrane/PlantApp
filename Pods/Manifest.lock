@@ -4,12 +4,14 @@ PODS:
   - BTNavigationDropdownMenu (0.1.8)
   - Parse (1.10.0):
     - Bolts/Tasks (~> 1.5)
+  - SwiftLoader (0.2.5)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - BTNavigationDropdownMenu
   - Parse
+  - SwiftLoader
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -17,6 +19,7 @@ SPEC CHECKSUMS:
   Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
   BTNavigationDropdownMenu: 23403214197d8fb208dd0ad996e3d236748473c9
   Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
+  SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

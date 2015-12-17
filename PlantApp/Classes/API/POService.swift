@@ -66,20 +66,38 @@ struct POService {
     
     // MARK: - GET Plant from Parse
     
-    static func getPlants(completionhandler:(response: PlantsDictionnary?, error: NSError?) -> ()) {
+    static func getPlants(completionHandler:(response: PlantsDictionnary?, error: NSError?) -> ()) {
         let query = PFQuery(className: "Plant")
         
         query.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error:NSError?) -> Void in
             if error == nil {
                 let data = PlantsDictionnary(objects: objects)
-                completionhandler(response: data, error: nil)
+                completionHandler(response: data, error: nil)
             } else {
-                completionhandler(response: nil, error: error)
+                completionHandler(response: nil, error: error)
             }
         }
         
     }
     
+    // MARK: - GET User Plant from Parse
+    
+    static func getUserPlants(completionHandler:(response: String?, error: NSError?) -> ()) {
+        let query = PFQuery(className: "Have")
+        
+        query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
+            if error == nil {
+                if let objects = objects {
+                    for object in objects {
+                        print(object)
+                    }
+                }
+            } else {
+                completionHandler(response: nil, error: error)
+            }
+        }
+        
+    }
 
     
 }

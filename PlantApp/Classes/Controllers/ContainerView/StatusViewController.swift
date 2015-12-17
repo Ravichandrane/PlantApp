@@ -15,6 +15,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var informationBar: UIView!
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var toWater: UIView!
+    @IBOutlet weak var infoText: UILabel!
     
     // MARK: - View
     
@@ -27,6 +28,7 @@ class StatusViewController: UIViewController {
     
     func styleView() {
         self.navigationItem.title = "Plant info"
+        infoText.text = "To water"
         navigationIcon("BackBtn", action: "previousView:", target: self, navigationItem: navigationItem, position: "left")
         statusView.backgroundColor = UIColor.clearColor()
         ShadowView(informationBar)

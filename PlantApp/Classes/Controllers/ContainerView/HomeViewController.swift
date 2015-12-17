@@ -40,7 +40,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     // MARK: - Style View
     
     func styleView() {
-        
         plantCollectionView.backgroundColor = UIColor.clearColor()
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }

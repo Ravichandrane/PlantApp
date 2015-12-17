@@ -38,6 +38,7 @@
 		41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */; };
 		41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */; };
 		41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */; };
+		41B8A1021C2364D000F72943 /* UserPlants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B8A1011C2364D000F72943 /* UserPlants.swift */; };
 		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
 		41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24671C20B37700732871 /* OnboardingViewController.swift */; };
 		41BA246A1C20B83500732871 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gradient.swift */; };
@@ -67,7 +68,7 @@
 		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		414384831C222FDA005F2CD0 /* weatherIconFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherIconFromString.swift; sourceTree = "<group>"; };
 		414384851C223714005F2CD0 /* PO Fleur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PO Fleur.entitlements"; sourceTree = "<group>"; };
-		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415ACEDD1C1F0326003611B1 /* PlantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeLayout.swift; sourceTree = "<group>"; };
 		41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarIcon.swift; sourceTree = "<group>"; };
 		41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
+		41B8A1011C2364D000F72943 /* UserPlants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPlants.swift; sourceTree = "<group>"; };
 		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		41BA24671C20B37700732871 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		41BA24691C20B83500732871 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 		415ACEDE1C1F0326003611B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				415ACEDD1C1F0326003611B1 /* PO Fleur.app */,
+				415ACEDD1C1F0326003611B1 /* PlantApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +282,7 @@
 			children = (
 				4143846C1C215940005F2CD0 /* Weather.swift */,
 				410852641C22B3E200860F02 /* Plants.swift */,
+				41B8A1011C2364D000F72943 /* UserPlants.swift */,
 			);
 			name = Models;
 			path = Classes/Models;
@@ -322,9 +325,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415ACEDC1C1F0326003611B1 /* PO Fleur */ = {
+		415ACEDC1C1F0326003611B1 /* PlantApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PO Fleur" */;
+			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */;
 			buildPhases = (
 				DD81805569C253E1587F053A /* Check Pods Manifest.lock */,
 				415ACED91C1F0326003611B1 /* Sources */,
@@ -337,9 +340,9 @@
 			);
 			dependencies = (
 			);
-			name = "PO Fleur";
+			name = PlantApp;
 			productName = PlantApp;
-			productReference = 415ACEDD1C1F0326003611B1 /* PO Fleur.app */;
+			productReference = 415ACEDD1C1F0326003611B1 /* PlantApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -369,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PO Fleur" */;
+			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -382,7 +385,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				415ACEDC1C1F0326003611B1 /* PO Fleur */,
+				415ACEDC1C1F0326003611B1 /* PlantApp */,
 			);
 		};
 /* End PBXProject section */
@@ -456,6 +459,7 @@
 			files = (
 				413773201C20ED9500B8F704 /* POService.swift in Sources */,
 				41BA24601C205BEC00732871 /* ShadowView.swift in Sources */,
+				41B8A1021C2364D000F72943 /* UserPlants.swift in Sources */,
 				414384801C220902005F2CD0 /* LocationService.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
 				4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */,
@@ -605,7 +609,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "PO Fleur";
+				PRODUCT_NAME = PlantApp;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -622,7 +626,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "PO Fleur";
+				PRODUCT_NAME = PlantApp;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -630,23 +634,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PO Fleur" */ = {
+		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEED1C1F0326003611B1 /* Debug */,
 				415ACEEE1C1F0326003611B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PO Fleur" */ = {
+		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEF01C1F0326003611B1 /* Debug */,
 				415ACEF11C1F0326003611B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

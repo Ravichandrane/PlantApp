@@ -88,6 +88,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-PlantApp/BTNavigationDropdownMenu.framework"
   install_framework "Pods-PlantApp/Bolts.framework"
   install_framework "Pods-PlantApp/Parse.framework"
+  install_framework "Pods-PlantApp/SwiftLoader.framework"
   install_framework "Pods-PlantApp/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -95,5 +96,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-PlantApp/BTNavigationDropdownMenu.framework"
   install_framework "Pods-PlantApp/Bolts.framework"
   install_framework "Pods-PlantApp/Parse.framework"
+  install_framework "Pods-PlantApp/SwiftLoader.framework"
   install_framework "Pods-PlantApp/SwiftyJSON.framework"
 fi
