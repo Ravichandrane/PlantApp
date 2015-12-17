@@ -17,6 +17,8 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var toWater: UIView!
     @IBOutlet weak var infoText: UILabel!
     
+    var plant:UserPlants?
+    
     // MARK: - View
     
     override func viewDidLoad() {
