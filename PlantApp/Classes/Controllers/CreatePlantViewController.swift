@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class CreatePlantViewController: UIViewController, UITextFieldDelegate {
 
@@ -76,7 +77,19 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
     // Action
     
     func addPlant(sender: UIButton) {
-        
+                
+        let havePlant = PFObject(className:"Have")
+        havePlant.relationForKey("user").addObject(PFUser.currentUser()! as PFObject)
+        havePlant.relationForKey("plant").addObject((plant?.object)! as PFObject)
+        havePlant["plantName"] = giveName.text
+        havePlant.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                print("Saved")
+            } else {
+                print("Error")
+            }
+        }
     }
     
     func previousView(sender: UIButton) {

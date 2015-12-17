@@ -9,6 +9,8 @@
 import Parse
 
 struct Plants {
+    let object: PFObject!
+    let id: String!
     let cold: Int!
     let preserve: Int!
     let sunlight: Int!
@@ -24,13 +26,15 @@ struct PlantsDictionnary {
         
         if let objects = objects {
             for object in objects {
+                let object = object
+                let id = object.objectId
                 let cold = object.objectForKey("cold") as! Int
                 let preserve = object.objectForKey("preserve") as! Int
                 let sunlight = object.objectForKey("sunlight") as! Int
                 let variety = object.objectForKey("variety") as! String
                 let water = object.objectForKey("water") as! Int
                 
-                list.append(Plants(cold: cold, preserve: preserve, sunlight: sunlight, variety: variety, water: water))
+                list.append(Plants(object: object, id: id,cold: cold, preserve: preserve, sunlight: sunlight, variety: variety, water: water))
                 
             }
         }
