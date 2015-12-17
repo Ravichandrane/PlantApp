@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		410852651C22B3E200860F02 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852641C22B3E200860F02 /* Plants.swift */; };
+		4108526A1C22E17F00860F02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852691C22E17F00860F02 /* LoginViewController.swift */; };
+		4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526B1C22E39400860F02 /* CustomTextField.swift */; };
+		4108526E1C22E3AF00860F02 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526D1C22E3AF00860F02 /* Animation.swift */; };
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
 		413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413773211C20EEC900B8F704 /* ApiKeys.plist */; };
 		413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413773231C20EF9C00B8F704 /* ValueForApiKey.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		410852641C22B3E200860F02 /* Plants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
+		410852691C22E17F00860F02 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginView/LoginViewController.swift; sourceTree = "<group>"; };
+		4108526B1C22E39400860F02 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		4108526D1C22E3AF00860F02 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
 		413773211C20EEC900B8F704 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueForApiKey.swift; sourceTree = "<group>"; };
@@ -95,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		410852661C22E13100860F02 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				410852691C22E17F00860F02 /* LoginViewController.swift */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
 		414384701C21BC6A005F2CD0 /* StatusView */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				41BA24631C20B33A00732871 /* OnboardingView */,
+				410852661C22E13100860F02 /* LoginView */,
 				41BA24641C20B34700732871 /* HomeView */,
 				414384701C21BC6A005F2CD0 /* StatusView */,
 				414384711C21BCA8005F2CD0 /* AddView */,
@@ -247,6 +262,8 @@
 				4143847F1C220902005F2CD0 /* LocationService.swift */,
 				414384811C2226D2005F2CD0 /* AlertView.swift */,
 				414384831C222FDA005F2CD0 /* weatherIconFromString.swift */,
+				4108526B1C22E39400860F02 /* CustomTextField.swift */,
+				4108526D1C22E3AF00860F02 /* Animation.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -436,6 +453,8 @@
 				414384801C220902005F2CD0 /* LocationService.swift in Sources */,
 				41B3F3B61C1FBB3D0022FA34 /* NotificationViewController.swift in Sources */,
 				4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */,
+				4108526E1C22E3AF00860F02 /* Animation.swift in Sources */,
+				4108526A1C22E17F00860F02 /* LoginViewController.swift in Sources */,
 				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
 				4143846D1C215940005F2CD0 /* Weather.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
@@ -444,6 +463,7 @@
 				41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */,
+				4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */,
 				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,

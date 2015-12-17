@@ -10,7 +10,7 @@ import UIKit
 
 extension CAGradientLayer {
 
-    func onboardingGardient() -> CAGradientLayer{
+    func mainGardient() -> CAGradientLayer{
         let topColor = UIColorFromRGBA("13EA6E", alpha: 1.0)
         let bottomColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
     

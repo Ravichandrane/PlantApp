@@ -48,11 +48,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If it's the first time show the OnboardingView else show the HomeView
         
         let OnboardingViewControlelr = storyboard.instantiateViewControllerWithIdentifier("onboardingView")
-        let HomeViewController = storyboard.instantiateViewControllerWithIdentifier("homeViewNavigation")
+        let LoginViewController = storyboard.instantiateViewControllerWithIdentifier("loginViewNav")
         
         if LocalStore.isFirstTime() == true {
             if self.window != nil {
-                self.window!.rootViewController = HomeViewController
+                self.window!.rootViewController = LoginViewController
             }
         }else{
             if self.window != nil {

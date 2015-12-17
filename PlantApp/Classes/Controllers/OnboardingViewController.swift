@@ -24,7 +24,8 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     override func viewDidLayoutSubviews() {
-        let backgroundColor = CAGradientLayer().onboardingGardient()
+        super.viewDidLayoutSubviews()
+        let backgroundColor = CAGradientLayer().mainGardient()
         backgroundColor.frame = self.view.bounds
         self.view.layer.insertSublayer(backgroundColor, atIndex: 0)
     }
