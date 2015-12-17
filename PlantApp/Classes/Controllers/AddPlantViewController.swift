@@ -88,6 +88,7 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let createView = storyboard?.instantiateViewControllerWithIdentifier("createPlant") as! CreatePlantViewController
+        createView.plant = plantList[indexPath.row]
         self.navigationController?.pushViewController(createView, animated: true)
     }
     

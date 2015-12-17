@@ -1,5 +1,5 @@
 //
-//  GameCenterViewController.swift
+//  SettingsViewController.swift
 //  PO Fleur
 //
 //  Created by Ravichandrane Rajendran on 15/12/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameCenterViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

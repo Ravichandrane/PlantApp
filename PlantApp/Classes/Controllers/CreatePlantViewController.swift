@@ -15,6 +15,8 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var giveName: UITextField!
     @IBOutlet weak var plantName: UILabel!
     @IBOutlet weak var addButton: UIButton!
+    
+    var plant:Plants?
 
     // MARK: - View
     
@@ -22,6 +24,7 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         giveName.delegate = self
         styleView()
+        refreshUI()
     }
     
     // MARK: - Touch & UITextField Delegate
@@ -40,23 +43,27 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
     func styleView() {
         self.navigationItem.title = "Give me a name"
         navigationIcon("BackBtn", action: "previousView:", target: self, navigationItem: navigationItem, position: "left")
-    
         customTextField()
         customButton()
     }
     
+    private func refreshUI() {
+        if let currentPlant = plant {
+            plantName.text = currentPlant.variety
+            plantImage.image = UIImage(named: "\(currentPlant.variety)_happy")
+        }
+    }
+
+    
     func customTextField() {
-        
         giveName.borderStyle = UITextBorderStyle.None
         giveName.placeholder = "Your plant name"
         giveName.autocapitalizationType = .None
         giveName.tintColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
         giveName.textColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
-        
     }
     
     func customButton() {
-        
         addButton.titleLabel?.font = UIFont.systemFontOfSize(20)
         addButton.setTitle("Ajouter", forState: UIControlState.Normal)
         addButton.tintColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
@@ -64,7 +71,6 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
         addButton.layer.borderWidth = 2
         addButton.layer.cornerRadius = 10
         addButton.addTarget(self, action: "addPlant:", forControlEvents: .TouchUpInside)
-        
     }
     
     // Action

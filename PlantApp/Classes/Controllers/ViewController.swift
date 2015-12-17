@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     // MARK: - IBOutle & Variable
     
-    let items = ["Home", "Game Center", "Notifications"]
+    let items = ["Home", "Settings", "Notifications"]
     var menuView: BTNavigationDropdownMenu!
     
     @IBOutlet weak var homeView: UIView!
