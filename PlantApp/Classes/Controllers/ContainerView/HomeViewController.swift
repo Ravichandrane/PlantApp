@@ -17,6 +17,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var windSpeed: UILabel!
     @IBOutlet weak var humidity: UILabel!
     @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var iconState: UIImageView!
     
     // MARK: - View
     
@@ -50,6 +51,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             }else{
                 if response != nil {
                     self.windSpeed.text = "\(response!.windSpeed) km/h"
+                    self.iconState.image = UIImage(named: response!.icon)
                     self.humidity.text = "\(response!.humidity * 100) %"
                     self.temperature.text = "\(response!.temperature)°"
                 }

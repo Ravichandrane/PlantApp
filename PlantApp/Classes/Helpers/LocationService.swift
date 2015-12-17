@@ -74,7 +74,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
                 self.stopUpdatingLocation()
                 let userLocation = placeUser![0]
                 self.userPlace = userLocation.locality
-                print(self.userPlace)
+                //print(self.userPlace)
             }
             
         })

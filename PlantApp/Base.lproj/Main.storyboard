@@ -94,7 +94,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tdl-2y-n0r">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Petit_heureux" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-Oc-4yX">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Petit_heureux" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-Oc-4yX">
                                                             <rect key="frame" x="31" y="23" width="58" height="74"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tZ-S8-IDn">
@@ -250,7 +250,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-4w-d6F">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-4w-d6F">
                                                             <rect key="frame" x="97" y="197" width="126" height="134"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Come on! added a new plant and give yourself a break." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-qi-6Eh">
@@ -359,8 +359,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4c-iI-CyN" userLabel="WeatherView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Soleil" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-yG-eNc">
-                                        <rect key="frame" x="270" y="10" width="40" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-yG-eNc">
+                                        <rect key="frame" x="260" y="10" width="40" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="9hy-dx-rE5"/>
                                             <constraint firstAttribute="width" constant="40" id="nkk-G9-g7B"/>
@@ -428,7 +428,7 @@
                                     <constraint firstItem="8la-eR-P0n" firstAttribute="top" secondItem="d4c-iI-CyN" secondAttribute="top" constant="8" id="hAa-uP-1gd"/>
                                     <constraint firstItem="c4I-zl-exl" firstAttribute="top" secondItem="8la-eR-P0n" secondAttribute="bottom" constant="19" id="kUe-Pq-phB"/>
                                     <constraint firstItem="c4I-zl-exl" firstAttribute="leading" secondItem="qmT-l0-iPh" secondAttribute="trailing" constant="8" id="l8R-bQ-pbG"/>
-                                    <constraint firstAttribute="trailing" secondItem="9EN-yG-eNc" secondAttribute="trailing" constant="10" id="mYP-2s-kPK"/>
+                                    <constraint firstAttribute="trailing" secondItem="9EN-yG-eNc" secondAttribute="trailing" constant="20" id="mYP-2s-kPK"/>
                                     <constraint firstItem="79c-ba-NIQ" firstAttribute="centerX" secondItem="d4c-iI-CyN" secondAttribute="centerX" constant="15" id="nQY-QN-Xd9"/>
                                     <constraint firstItem="9EN-yG-eNc" firstAttribute="top" secondItem="d4c-iI-CyN" secondAttribute="top" constant="10" id="s5j-Yt-cpP"/>
                                 </constraints>
@@ -521,6 +521,7 @@
                     <connections>
                         <outlet property="currentPosition" destination="8la-eR-P0n" id="dUU-VN-JmZ"/>
                         <outlet property="humidity" destination="ZER-xp-Snr" id="GpS-Wa-Kwp"/>
+                        <outlet property="iconState" destination="9EN-yG-eNc" id="J6e-eL-dTO"/>
                         <outlet property="plantCollectionView" destination="IVC-JS-Tr7" id="erZ-br-jE1"/>
                         <outlet property="temperature" destination="79c-ba-NIQ" id="dGg-7f-MKk"/>
                         <outlet property="windSpeed" destination="c4I-zl-exl" id="tBn-8Q-Joe"/>
@@ -819,8 +820,8 @@
         <image name="Humidity" width="35" height="36"/>
         <image name="Petit_heureux" width="58" height="74"/>
         <image name="Pin" width="21" height="28"/>
-        <image name="Soleil" width="62" height="62"/>
         <image name="Wind" width="52" height="26"/>
+        <image name="default" width="36" height="39"/>
         <image name="welcome" width="126" height="134"/>
     </resources>
 </document>

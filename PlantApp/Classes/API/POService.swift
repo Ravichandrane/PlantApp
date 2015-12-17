@@ -49,8 +49,9 @@ struct POService {
                     let humidity = data["humidity"].double 
                     let windSpeed = data["windSpeed"].double
                     let cloudCover = data["cloudCover"].double
+                    let icon = weatherIconFromString(data["icon"].string!)
                     
-                    let setValue = Weather (temperature: temperature, humidity: humidity, windSpeed: windSpeed, cloudCover: cloudCover)
+                    let setValue = Weather (temperature: temperature, humidity: humidity, windSpeed: windSpeed, cloudCover: cloudCover, icon: icon)
                     
                     completionHandler(response: setValue, error: nil)
                 break

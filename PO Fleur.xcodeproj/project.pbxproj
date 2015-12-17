@@ -17,6 +17,7 @@
 		4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847D1C21DAD2005F2CD0 /* CustomElement.swift */; };
 		414384801C220902005F2CD0 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847F1C220902005F2CD0 /* LocationService.swift */; };
 		414384821C2226D2005F2CD0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384811C2226D2005F2CD0 /* AlertView.swift */; };
+		414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384831C222FDA005F2CD0 /* weatherIconFromString.swift */; };
 		415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415ACEE01C1F0326003611B1 /* AppDelegate.swift */; };
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
@@ -51,6 +52,8 @@
 		4143847D1C21DAD2005F2CD0 /* CustomElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElement.swift; sourceTree = "<group>"; };
 		4143847F1C220902005F2CD0 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		414384831C222FDA005F2CD0 /* weatherIconFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherIconFromString.swift; sourceTree = "<group>"; };
+		414384851C223714005F2CD0 /* PO Fleur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PO Fleur.entitlements"; sourceTree = "<group>"; };
 		415ACEDD1C1F0326003611B1 /* PO Fleur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Fleur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		415ACED41C1F0326003611B1 = {
 			isa = PBXGroup;
 			children = (
+				414384851C223714005F2CD0 /* PO Fleur.entitlements */,
 				415ACEDF1C1F0326003611B1 /* PlantApp */,
 				415ACEDE1C1F0326003611B1 /* Products */,
 				BEC73DCFB57CA4697EE976E0 /* Pods */,
@@ -240,6 +244,7 @@
 				4143847D1C21DAD2005F2CD0 /* CustomElement.swift */,
 				4143847F1C220902005F2CD0 /* LocationService.swift */,
 				414384811C2226D2005F2CD0 /* AlertView.swift */,
+				414384831C222FDA005F2CD0 /* weatherIconFromString.swift */,
 			);
 			name = Helpers;
 			path = Classes/Helpers;
@@ -323,8 +328,15 @@
 				TargetAttributes = {
 					415ACEDC1C1F0326003611B1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = VLSXUWGCDJ;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -429,6 +441,7 @@
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
+				414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */,
 				41BA24621C2069FC00732871 /* GameCenterViewController.swift in Sources */,
 				414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */,
 				4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */,
@@ -553,11 +566,15 @@
 			baseConfigurationReference = BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PO Fleur.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlantApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
 				PRODUCT_NAME = "PO Fleur";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -566,11 +583,15 @@
 			baseConfigurationReference = 9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "PO Fleur.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlantApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
 				PRODUCT_NAME = "PO Fleur";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

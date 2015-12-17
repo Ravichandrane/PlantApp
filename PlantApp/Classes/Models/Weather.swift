@@ -14,4 +14,5 @@ struct Weather {
     let humidity: Double!
     let windSpeed: Double!
     let cloudCover: Double!
+    let icon: String
 }
