@@ -115,7 +115,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let statusViewController = storyboard?.instantiateViewControllerWithIdentifier("statusView") as! StatusViewController
-        //statusViewController.plant = userPlantList[indexPath.row]
+        statusViewController.plant = userPlantList[indexPath.row]
         self.navigationController?.pushViewController(statusViewController, animated: true)
     }
     
