@@ -9,6 +9,10 @@
 import UIKit
 import CoreLocation
 
+protocol LocationServiceDelegate: class {
+    func didFindNewLocation(latitude:Double, longitude:Double, placeName:String)
+}
+
 class LocationService: NSObject, CLLocationManagerDelegate {
     
     static let sharedInstance = LocationService()
@@ -16,9 +20,11 @@ class LocationService: NSObject, CLLocationManagerDelegate {
     // MARK: - Variable
     
     var locationManager: CLLocationManager?
+    
     var userLatitude: Double?
     var userLongitude: Double?
     var userPlace: String?
+    weak var delegate: LocationServiceDelegate?
     
     // MARK: - Init
     
@@ -74,7 +80,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
                 self.stopUpdatingLocation()
                 let userLocation = placeUser![0]
                 self.userPlace = userLocation.locality
-                //print(self.userPlace)
+                self.delegate?.didFindNewLocation(self.userLatitude!, longitude: self.userLongitude!, placeName: self.userPlace!)
             }
             
         })
@@ -94,5 +100,6 @@ class LocationService: NSObject, CLLocationManagerDelegate {
         }
         
     }
-
+    
+    
 }

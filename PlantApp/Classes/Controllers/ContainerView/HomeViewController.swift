@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LocationServiceDelegate {
 
     // MARK: - IBOutlet & Variable
 
@@ -19,16 +19,18 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet weak var temperature: UILabel!
     @IBOutlet weak var iconState: UIImageView!
     
+    var currentLatitude: Double!
+    var currentLongitude: Double!
+    
     // MARK: - View
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-        getWeather()
+        LocationService.sharedInstance.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         plantCollectionView.dataSource = self
         plantCollectionView.delegate = self
         styleView()
@@ -38,14 +40,22 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     // MARK: - Style View
     
     func styleView() {
+        
         plantCollectionView.backgroundColor = UIColor.clearColor()
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
     }
     
     // MARK: - Weather Information
     
-    func getWeather() {
-        POService.getCurrentWeather(49.035723, userLongitude: 2.478652) { (response, error) -> () in
+    func didFindNewLocation(latitude: Double, longitude: Double, placeName: String) {
+        currentLatitude = latitude
+        currentLongitude = longitude
+        currentPosition.text = placeName
+        getWeather(currentLatitude, longitude: currentLongitude)
+    }
+    
+    func getWeather(latitude: Double, longitude: Double) {
+        POService.getCurrentWeather(latitude, userLongitude: latitude) { (response, error) -> () in
             if error != nil {
                 print("error")
             }else{
