@@ -124,9 +124,8 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     
     func startAdventure(sender: UIButton) {
         
-        let homeViewController = storyboard?.instantiateViewControllerWithIdentifier("homeViewNavigation")
-        homeViewController?.modalTransitionStyle = .CrossDissolve
-        self.presentViewController(homeViewController!, animated: true, completion: nil)
+        let loginViewControllerView = storyboard?.instantiateViewControllerWithIdentifier("loginViewNav")
+        self.presentViewController(loginViewControllerView!, animated: true, completion: nil)
         
         LocalStore.isFirstTime(true)
         

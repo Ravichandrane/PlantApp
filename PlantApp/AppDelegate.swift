@@ -32,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
-
         // Init Parse
         
         let appId = valueForAPIKey(keyname: "PARSE_APP")
@@ -45,19 +44,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        // If it's the first time show the OnboardingView else show the HomeView
+        // If it's the first time show the OnboardingView else LoginView
         
         let OnboardingViewControlelr = storyboard.instantiateViewControllerWithIdentifier("onboardingView")
         let LoginViewController = storyboard.instantiateViewControllerWithIdentifier("loginViewNav")
+        let homeViewController = storyboard.instantiateViewControllerWithIdentifier("homeViewNavigation")
+        let currentUser = PFUser.currentUser()
         
-        if LocalStore.isFirstTime() == true {
-            if self.window != nil {
-                self.window!.rootViewController = LoginViewController
-            }
+        if currentUser != nil {
+            self.window!.rootViewController = homeViewController
+        }else if LocalStore.isFirstTime() == true {
+            self.window!.rootViewController = LoginViewController
         }else{
-            if self.window != nil {
-                self.window!.rootViewController = OnboardingViewControlelr
-            }
+            self.window!.rootViewController = OnboardingViewControlelr
         }
         
         return true
