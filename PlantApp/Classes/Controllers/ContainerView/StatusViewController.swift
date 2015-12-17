@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class StatusViewController: UIViewController {
 
@@ -21,12 +22,31 @@ class StatusViewController: UIViewController {
     @IBOutlet var plantName: UILabel!
     
     var plant:UserPlants?
+    var plantParse:PFObject?
     
     // MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
         styleView()
+        
+        let query = PFQuery(className:"Have")
+        query.getObjectInBackgroundWithId((plant?.id)!) {
+            (plant: PFObject?, error: NSError?) -> Void in
+            if error == nil && plant != nil {
+                self.plantParse = plant
+                if let data = plant!.objectForKey("humidity"){
+                    if let humidity:Double = Double(data as! NSNumber){
+                        if humidity > 0{
+                            self.circleProgress.progress = Double(plant!.objectForKey("humidity") as! NSNumber)/100
+                            self.percentCircle.text = "\(Double(plant!.objectForKey("humidity")! as! NSNumber))%"
+                            
+                        }
+                    }
+                }
+                
+            }
+        }
     }
     
     // MARK: - Style view
@@ -55,6 +75,15 @@ class StatusViewController: UIViewController {
                 self.circleProgress.setProgress(self.circleProgress.progress + 0.1, animated:true)
                 };
             percentCircle.text = "\(circleProgress.progress*100+10)%"
+            self.plantParse?["humidity"] = circleProgress.progress*100+10
+            self.plantParse?.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    print("Saved")
+                } else {
+                    print("Error")
+                }
+            }
         }
     }
     
