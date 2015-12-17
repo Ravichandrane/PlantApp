@@ -82,16 +82,13 @@ struct POService {
     
     // MARK: - GET User Plant from Parse
     
-    static func getUserPlants(completionHandler:(response: String?, error: NSError?) -> ()) {
+    static func getUserPlants(completionHandler:(response: UserPlantsDictionnary?, error: NSError?) -> ()) {
         let query = PFQuery(className: "Have")
         
         query.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
-                if let objects = objects {
-                    for object in objects {
-                        print(object)
-                    }
-                }
+                let data = UserPlantsDictionnary(objects: objects)
+                completionHandler(response: data, error: nil)
             } else {
                 completionHandler(response: nil, error: error)
             }

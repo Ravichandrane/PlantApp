@@ -12,4 +12,30 @@ import Parse
 struct UserPlants {
     let id: String!
     let plantName: String!
+    let variety: String!
 }
+
+
+struct UserPlantsDictionnary {
+    
+    var list: [UserPlants] = []
+    
+    init(objects: [PFObject]?){
+        
+        if let objects = objects {
+            for object in objects {
+                let id = object.objectId
+                let plantName = object.objectForKey("plantName") as! String
+                let variety = object.objectForKey("variety") as! String
+                
+                list.append(UserPlants(id: id, plantName: plantName, variety: variety))
+                
+            }
+        }
+        
+    }
+    
+}
+
+
+

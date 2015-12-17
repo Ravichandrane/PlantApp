@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="mainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,7 +67,7 @@
         <!--Add Plant View Controller-->
         <scene sceneID="5ye-Rq-w9g">
             <objects>
-                <viewController storyboardIdentifier="addView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qfw-vO-HEK" customClass="AddPlantViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qfw-vO-HEK" customClass="AddPlantViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sWw-G3-cMN"/>
                         <viewControllerLayoutGuide type="bottom" id="Ful-7z-lxJ"/>
@@ -85,7 +85,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addCollectionViewCell" id="kK2-Af-v57" customClass="AddPlantCollectionViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="addCollectionViewCell" id="kK2-Af-v57" customClass="AddPlantCollectionViewCell" customModule="PlantApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -157,7 +157,7 @@
         <!--Create Plant View Controller-->
         <scene sceneID="w7E-3y-3AK">
             <objects>
-                <viewController storyboardIdentifier="createPlant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xj-4b-zSL" customClass="CreatePlantViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createPlant" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xj-4b-zSL" customClass="CreatePlantViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G0e-Ui-Ypu"/>
                         <viewControllerLayoutGuide type="bottom" id="eW9-1V-FTK"/>
@@ -229,7 +229,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="lGd-Mh-S8Q">
             <objects>
-                <viewController storyboardIdentifier="onboardingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bPA-8t-Fdt" customClass="OnboardingViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bPA-8t-Fdt" customClass="OnboardingViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xcV-nn-IGv"/>
                         <viewControllerLayoutGuide type="bottom" id="JdL-v3-J6h"/>
@@ -247,7 +247,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingCollectionViewCell" id="4wP-tj-Phc" customClass="OnboardingCollectionViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="onboardingCollectionViewCell" id="4wP-tj-Phc" customClass="OnboardingCollectionViewCell" customModule="PlantApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -341,7 +341,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="xdJ-Pp-Qv3">
             <objects>
-                <viewController storyboardIdentifier="signUpView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6o-CF-746" customClass="SignUpViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUpView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="M6o-CF-746" customClass="SignUpViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XPt-rU-953"/>
                         <viewControllerLayoutGuide type="bottom" id="Xbz-8v-CiP"/>
@@ -436,7 +436,7 @@
         <!--Login View Controller-->
         <scene sceneID="XjT-vf-tcA">
             <objects>
-                <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaM-AV-7iq" customClass="LoginViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iaM-AV-7iq" customClass="LoginViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="86F-it-7H1"/>
                         <viewControllerLayoutGuide type="bottom" id="cBd-7F-G8H"/>
@@ -532,7 +532,7 @@
         <!--Home View Controller-->
         <scene sceneID="DPJ-pu-umY">
             <objects>
-                <viewController id="SUw-Ip-nv0" customClass="HomeViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SUw-Ip-nv0" customClass="HomeViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bEb-ZB-Y9V"/>
                         <viewControllerLayoutGuide type="bottom" id="nWQ-jw-pgN"/>
@@ -620,14 +620,14 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-JS-Tr7">
                                 <rect key="frame" x="0.0" y="100" width="320" height="468"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lrn-ZE-J3b" customClass="HomeLayout" customModule="PO_Fleur" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lrn-ZE-J3b" customClass="HomeLayout" customModule="PlantApp" customModuleProvider="target">
                                     <size key="itemSize" width="308" height="110"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCollectionViewCell" id="t6Z-is-unw" customClass="HomeCollectionViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCollectionViewCell" id="t6Z-is-unw" customClass="HomeCollectionViewCell" customModule="PlantApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -719,7 +719,7 @@
         <!--Status View Controller-->
         <scene sceneID="qK0-uZ-F80">
             <objects>
-                <viewController storyboardIdentifier="statusView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NsL-wR-adr" customClass="StatusViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="statusView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NsL-wR-adr" customClass="StatusViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YY8-FN-ZIy"/>
                         <viewControllerLayoutGuide type="bottom" id="80f-sb-hIn"/>
@@ -857,7 +857,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPi-EE-Bk0">
                                         <rect key="frame" x="143" y="445" width="35" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="pYw-qX-L3g">
@@ -870,7 +870,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAV-34-WDE">
                                         <rect key="frame" x="127" y="60" width="66" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -928,11 +928,11 @@
         <!--Settings Table View Controller-->
         <scene sceneID="w8K-H7-xHB">
             <objects>
-                <tableViewController id="Bvh-Lt-61Y" customClass="SettingsTableViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Bvh-Lt-61Y" customClass="SettingsTableViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="V4X-TW-Nl5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="User Information" id="4Ws-XP-sxb">
                                 <cells>
@@ -946,7 +946,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kec-bH-p9a">
                                                     <rect key="frame" x="10" y="11" width="65" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqG-5F-9bP">
@@ -975,7 +975,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfh-gy-lUS">
                                                     <rect key="frame" x="10" y="11" width="35" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE0-ZF-HyE">
@@ -1046,7 +1046,7 @@
         <!--Notification View Controller-->
         <scene sceneID="e8l-xI-EKl">
             <objects>
-                <viewController id="GQh-Ca-xdw" customClass="NotificationViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GQh-Ca-xdw" customClass="NotificationViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4rS-ch-cGK"/>
                         <viewControllerLayoutGuide type="bottom" id="vn4-XW-g4z"/>
@@ -1059,7 +1059,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notificationTableViewCell" rowHeight="80" id="V7a-ZL-e4l" customClass="NotificationTableViewCell" customModule="PO_Fleur" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="notificationTableViewCell" rowHeight="80" id="V7a-ZL-e4l" customClass="NotificationTableViewCell" customModule="PlantApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V7a-ZL-e4l" id="Xof-ZU-4bh">
@@ -1155,7 +1155,7 @@
         <!--Password Forgot View Controller-->
         <scene sceneID="qYd-Np-KPi">
             <objects>
-                <viewController storyboardIdentifier="passwordForgotView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x6O-29-iNE" customClass="PasswordForgotViewController" customModule="PO_Fleur" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="passwordForgotView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x6O-29-iNE" customClass="PasswordForgotViewController" customModule="PlantApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mkk-kG-vXC"/>
                         <viewControllerLayoutGuide type="bottom" id="hxf-7N-cqj"/>

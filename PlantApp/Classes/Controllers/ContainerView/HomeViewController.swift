@@ -22,6 +22,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     var currentLatitude: Double!
     var currentLongitude: Double!
     
+    var userPlantList: [UserPlants] = [UserPlants]()
+    var userPlants: UserPlantsDictionnary?
+    
     // MARK: - View
     
     override func viewWillAppear(animated: Bool) {
@@ -42,6 +45,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func styleView() {
         plantCollectionView.backgroundColor = UIColor.clearColor()
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
+        getUserPlants()
     }
     
     // MARK: - Weather Information
@@ -68,6 +72,22 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
     
+    func getUserPlants() {
+        POService.getUserPlants { (response, error) -> () in
+            if error != nil {
+                print("error")
+            }else{
+                if response != nil {
+                    if let userPlants = response {
+                        self.userPlants = userPlants
+                        self.userPlantList = userPlants.list
+                        self.plantCollectionView.reloadData()
+                    }
+                }
+            }
+        }
+    }
+    
     // MARK: - CollectionView DataSource & Delegate
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -75,7 +95,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return userPlantList.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
@@ -88,11 +108,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HomeCollectionViewCell.cellIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
+        let data = userPlantList[indexPath.row]
+        cell.parseData(data)
         return cell
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let statusViewController = storyboard?.instantiateViewControllerWithIdentifier("statusView") as! StatusViewController
+        //statusViewController.plant = userPlantList[indexPath.row]
         self.navigationController?.pushViewController(statusViewController, animated: true)
     }
     

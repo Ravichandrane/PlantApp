@@ -25,6 +25,13 @@ class HomeCollectionViewCell: UICollectionViewCell {
         
     }
     
+    // MARK: - Parse data
+    
+    func parseData(data: UserPlants) {
+        plantName.text = data.plantName
+        plantStatus.image = UIImage(named: "\(data.variety)_happy")
+    }
+    
     // MARK: - Init scroll effect
     
     override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
@@ -44,6 +51,5 @@ class HomeCollectionViewCell: UICollectionViewCell {
         information.transform = CGAffineTransformMakeScale(scale, scale)
     
     }
-    
     
 }
