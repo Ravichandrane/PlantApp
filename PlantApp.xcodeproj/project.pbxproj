@@ -46,6 +46,7 @@
 		41BA24701C20BED000732871 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246F1C20BED000732871 /* Onboarding.swift */; };
 		41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24711C20E1AA00732871 /* LocalStore.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
+		9BE8C0EE1C2368A6000381CF /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C0ED1C2368A6000381CF /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		41BA246F1C20BED000732871 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		41BA24711C20E1AA00732871 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = ../Helpers/LocalStore.swift; sourceTree = "<group>"; };
+		9BE8C0ED1C2368A6000381CF /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82DD85B6E5378CC48B44E7 /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 		41B3F3AE1C1FBB3D0022FA34 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9BE8C0ED1C2368A6000381CF /* CircleProgressView.swift */,
 				41B3F3AF1C1FBB3D0022FA34 /* HomeLayout.swift */,
 				413773231C20EF9C00B8F704 /* ValueForApiKey.swift */,
 				41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */,
@@ -474,6 +477,7 @@
 				41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
 				414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */,
+				9BE8C0EE1C2368A6000381CF /* CircleProgressView.swift in Sources */,
 				4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */,

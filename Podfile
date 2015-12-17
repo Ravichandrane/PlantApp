@@ -7,5 +7,6 @@ target 'PlantApp' do
    pod 'SwiftLoader'   
    pod 'Parse'
    pod 'BTNavigationDropdownMenu'
+   pod 'CircleProgressView'
 end
 
