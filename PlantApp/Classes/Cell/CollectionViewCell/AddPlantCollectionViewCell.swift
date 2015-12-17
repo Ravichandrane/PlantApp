@@ -15,6 +15,9 @@ class AddPlantCollectionViewCell: UICollectionViewCell {
     
     static let cellIdentifier = "addCollectionViewCell"
     
+    @IBOutlet weak var plantImage: UIImageView!
+    @IBOutlet weak var plantName: UILabel!
+    
     // MARK: - Awake
     
     override func awakeFromNib() {
@@ -27,8 +30,14 @@ class AddPlantCollectionViewCell: UICollectionViewCell {
         viewCell.layer.borderWidth = 2
         viewCell.layer.borderColor = UIColorFromRGBA("2F3043", alpha: 0.5).CGColor
         viewCell.layer.cornerRadius = 10
-
     }
     
+    // MARK: - Parse data
+    
+    func parseData(data: Plants) {
+        
+        plantName.text = data.variety
+        
+    }
     
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Parse
 import Alamofire
 import SwiftyJSON
 
@@ -59,7 +60,21 @@ struct POService {
                     completionHandler(response: nil, error: error)
                 break
             }
-            
+        }
+    }
+    
+    // MARK: - GET Plant from Parse
+    
+    static func getPlants(completionhandler:(response: PlantsDictionnary?, error: NSError?) -> ()) {
+        let query = PFQuery(className: "Plant")
+        
+        query.findObjectsInBackgroundWithBlock { (objects:[PFObject]?, error:NSError?) -> Void in
+            if error == nil {
+                let data = PlantsDictionnary(objects: objects)
+                completionhandler(response: data, error: nil)
+            } else {
+                completionhandler(response: nil, error: error)
+            }
         }
         
     }

@@ -55,7 +55,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func getWeather(latitude: Double, longitude: Double) {
-        POService.getCurrentWeather(latitude, userLongitude: latitude) { (response, error) -> () in
+        POService.getCurrentWeather(latitude, userLongitude: longitude) { (response, error) -> () in
             if error != nil {
                 print("error")
             }else{

@@ -123,6 +123,8 @@
                                             <constraint firstAttribute="trailing" secondItem="Tdl-2y-n0r" secondAttribute="trailing" id="swA-NB-Lmf"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="plantImage" destination="YPb-Oc-4yX" id="UU2-gX-3aq"/>
+                                            <outlet property="plantName" destination="6tZ-S8-IDn" id="8Td-xv-mbb"/>
                                             <outlet property="viewCell" destination="Tdl-2y-n0r" id="8wV-Rs-wS8"/>
                                         </connections>
                                     </collectionViewCell>

@@ -16,7 +16,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var onboardingImage: UIImageView!
     @IBOutlet weak var onboardingText: UILabel!
     
-    static  let cellIdentifier = "onboardingCollectionViewCell"
+    static let cellIdentifier = "onboardingCollectionViewCell"
     
     // MARK: - Awake
     

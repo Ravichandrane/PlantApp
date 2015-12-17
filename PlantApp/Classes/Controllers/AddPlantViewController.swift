@@ -12,6 +12,8 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
 
     // MARK: - IBOutle & Variable
     @IBOutlet weak var addPlantCollectionView: UICollectionView!
+    var plantList: [Plants] = [Plants]()
+    var plants: PlantsDictionnary?
     
     // MARK: - Views
     
@@ -29,6 +31,7 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
         addPlantCollectionView.backgroundColor = UIColor.clearColor()
         
         styleView()
+        getPlants()
     }
     
     // MARK: - Style view
@@ -38,6 +41,24 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
         navigationIcon("close", action: "dissmissView", target: self, navigationItem: navigationItem, position: "left")
     }
     
+    // MARK: - Get Plants
+    
+    func getPlants() {
+        POService.getPlants { (response, error) -> () in
+            if error != nil {
+                print("error")
+            }else{
+                if response != nil {
+                    if let plants = response {
+                        self.plants = plants
+                        self.plantList = plants.list
+                        self.addPlantCollectionView.reloadData()
+                    }
+                }
+            }
+        }
+    }
+    
     // MARK: - CollectionView DataSource & Delegate
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -45,7 +66,7 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return plantList.count
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -58,7 +79,8 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(AddPlantCollectionViewCell.cellIdentifier, forIndexPath: indexPath) as! AddPlantCollectionViewCell
-        
+        let data = plantList[indexPath.row]
+        cell.parseData(data)
         cell.backgroundColor = UIColor.clearColor()
         
         return cell
