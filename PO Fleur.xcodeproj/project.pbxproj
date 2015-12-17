@@ -11,7 +11,7 @@
 		4108526A1C22E17F00860F02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852691C22E17F00860F02 /* LoginViewController.swift */; };
 		4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526B1C22E39400860F02 /* CustomTextField.swift */; };
 		4108526E1C22E3AF00860F02 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526D1C22E3AF00860F02 /* Animation.swift */; };
-		410852711C22F37C00860F02 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852701C22F37C00860F02 /* SigninViewController.swift */; };
+		410852711C22F37C00860F02 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852701C22F37C00860F02 /* SignUpViewController.swift */; };
 		410852731C22F45600860F02 /* PasswordForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852721C22F45600860F02 /* PasswordForgotViewController.swift */; };
 		410852751C230BD400860F02 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852741C230BD400860F02 /* SettingsTableViewController.swift */; };
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
@@ -39,7 +39,6 @@
 		41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */; };
 		41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */; };
 		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
-		41BA24621C2069FC00732871 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24611C2069FC00732871 /* SettingsViewController.swift */; };
 		41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24671C20B37700732871 /* OnboardingViewController.swift */; };
 		41BA246A1C20B83500732871 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gradient.swift */; };
 		41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */; };
@@ -53,7 +52,7 @@
 		410852691C22E17F00860F02 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginView/LoginViewController.swift; sourceTree = "<group>"; };
 		4108526B1C22E39400860F02 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4108526D1C22E3AF00860F02 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		410852701C22F37C00860F02 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		410852701C22F37C00860F02 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		410852721C22F45600860F02 /* PasswordForgotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordForgotViewController.swift; sourceTree = "<group>"; };
 		410852741C230BD400860F02 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 		41B3F3B01C1FBB3D0022FA34 /* NavigationBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarIcon.swift; sourceTree = "<group>"; };
 		41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
 		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		41BA24611C2069FC00732871 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		41BA24671C20B37700732871 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		41BA24691C20B83500732871 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				410852691C22E17F00860F02 /* LoginViewController.swift */,
-				410852701C22F37C00860F02 /* SigninViewController.swift */,
+				410852701C22F37C00860F02 /* SignUpViewController.swift */,
 				410852721C22F45600860F02 /* PasswordForgotViewController.swift */,
 			);
 			name = LoginView;
@@ -251,9 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				41B3F3AA1C1FBB3D0022FA34 /* HomeViewController.swift */,
-				41BA24611C2069FC00732871 /* SettingsViewController.swift */,
-				41B3F3AB1C1FBB3D0022FA34 /* NotificationViewController.swift */,
 				410852741C230BD400860F02 /* SettingsTableViewController.swift */,
+				41B3F3AB1C1FBB3D0022FA34 /* NotificationViewController.swift */,
 			);
 			path = ContainerView;
 			sourceTree = "<group>";
@@ -476,7 +473,6 @@
 				4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */,
-				41BA24621C2069FC00732871 /* SettingsViewController.swift in Sources */,
 				414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */,
 				4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */,
 				41B3F3B81C1FBB3D0022FA34 /* ViewController.swift in Sources */,
@@ -487,7 +483,7 @@
 				41BA246A1C20B83500732871 /* Gradient.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
 				410852731C22F45600860F02 /* PasswordForgotViewController.swift in Sources */,
-				410852711C22F37C00860F02 /* SigninViewController.swift in Sources */,
+				410852711C22F37C00860F02 /* SignUpViewController.swift in Sources */,
 				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
 				41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */,
 				414384821C2226D2005F2CD0 /* AlertView.swift in Sources */,

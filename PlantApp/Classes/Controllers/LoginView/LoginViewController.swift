@@ -32,14 +32,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.layer.insertSublayer(backgroundColor, atIndex: 0)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        
+    override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBar.barStyle = UIBarStyle.BlackOpaque
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.view.backgroundColor = UIColor.clearColor()
         self.navigationController!.navigationBar.translucent = true
-        
     }
     
     override func viewDidLoad() {
@@ -52,19 +50,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Style view
     
     func styleView() {
-        
         self.navigationItem.title = "Login"
-        
         passwordTextField.secureTextEntry = true
         customTextField(emailTextField, placeholder: "Email")
         customTextField(passwordTextField, placeholder: "Password")
-        
         buttonUI()
     }
     
     func buttonUI() {
         
-        customButton(createAccount, text: "Sign in now", color: "000000", borderColor: "", alpha: 1.0, borderWith: 0, cornerRadius: 0, target: self, action: "signIn:")
+        customButton(createAccount, text: "Sign up now", color: "000000", borderColor: "", alpha: 1.0, borderWith: 0, cornerRadius: 0, target: self, action: "signUp:")
         createAccount.titleLabel?.font = UIFont.systemFontOfSize(14)
         
         customButton(forgotPassword, text: "Forgot password ?", color: "000000", borderColor: "", alpha: 1.0, borderWith: 0, cornerRadius: 0, target: self, action: "forgotPassword:")
@@ -104,14 +99,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 homeViewNav.modalTransitionStyle = .FlipHorizontal
                 let navigationController = UINavigationController(rootViewController: homeViewNav)
                 self.presentViewController(navigationController, animated: true, completion: nil)
+
             } else {
                 showSimpleAlertWithTitle("MyGarden", message: "Oups something wrong !", viewController: self)
             }
         }
     }
     
-    func signIn(sender: UIButton) {
-        let signInView = self.storyboard?.instantiateViewControllerWithIdentifier("signInView")
+    func signUp(sender: UIButton) {
+        let signInView = self.storyboard?.instantiateViewControllerWithIdentifier("signUpView")
         self.navigationController?.pushViewController(signInView!, animated: true)
     }
     

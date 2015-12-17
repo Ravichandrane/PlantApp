@@ -1,5 +1,5 @@
 //
-//  SigninViewController.swift
+//  SignUpViewController.swift
 //  PO Fleur
 //
 //  Created by Ravichandrane Rajendran on 17/12/15.
@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class SigninViewController: UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - IBOutle & Variable
     
@@ -38,7 +38,7 @@ class SigninViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Style view
     
     func styleView() {
-        self.navigationItem.title = "Sign in"
+        self.navigationItem.title = "Sign up"
         userPassword.secureTextEntry = true
         customTextField(userName, placeholder: "Your sweet name")
         customTextField(userEmail, placeholder: "Your email")
@@ -48,7 +48,7 @@ class SigninViewController: UIViewController, UITextFieldDelegate {
     }
     
     func buttonUI() {
-        customButton(signInButton, text: "Sign in now", color: "ffffff", borderColor: "", alpha: 1.0, borderWith: 2, cornerRadius: 10, target: self, action: "signIn:")
+        customButton(signInButton, text: "Sign up now", color: "ffffff", borderColor: "", alpha: 1.0, borderWith: 2, cornerRadius: 10, target: self, action: "signUp:")
         signInButton.backgroundColor = UIColorFromRGBA("000000", alpha: 1.0)
         signInButton.titleLabel?.font = UIFont.systemFontOfSize(14)
     }
@@ -71,7 +71,7 @@ class SigninViewController: UIViewController, UITextFieldDelegate {
     
     // Action
     
-    func signIn(sender: UIButton) {
+    func signUp(sender: UIButton) {
 
         let user = PFUser()
         user.username = userName.text
