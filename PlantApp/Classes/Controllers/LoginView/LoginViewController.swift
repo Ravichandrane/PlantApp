@@ -52,7 +52,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func styleView() {
         self.navigationItem.title = "Login"
         passwordTextField.secureTextEntry = true
-        customTextField(emailTextField, placeholder: "Email")
+        customTextField(emailTextField, placeholder: "Username")
         customTextField(passwordTextField, placeholder: "Password")
         buttonUI()
     }
@@ -99,7 +99,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 homeViewNav.modalTransitionStyle = .FlipHorizontal
                 let navigationController = UINavigationController(rootViewController: homeViewNav)
                 self.presentViewController(navigationController, animated: true, completion: nil)
-
             } else {
                 showSimpleAlertWithTitle("MyGarden", message: "Oups something wrong !", viewController: self)
             }
@@ -116,6 +115,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.pushViewController(forgotPasswordView!, animated: true)
     }
 
+    // MARK: - Unwind
     
+    @IBAction func backLoginView(unwindSegue: UIStoryboardSegue) {}
     
 }

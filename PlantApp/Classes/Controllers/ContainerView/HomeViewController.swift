@@ -30,6 +30,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         LocationService.sharedInstance.delegate = self
+        plantCollectionView.reloadData()
     }
     
     override func viewDidLoad() {

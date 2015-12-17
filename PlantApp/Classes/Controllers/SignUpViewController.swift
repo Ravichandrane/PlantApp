@@ -84,7 +84,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 let errorString = error.userInfo["error"] as? String
                 showSimpleAlertWithTitle("Error", message: errorString!, viewController: self)
             } else {
-                print("added")
+                let homeViewNav  = self.storyboard?.instantiateViewControllerWithIdentifier("mainView") as! ViewController
+                homeViewNav.modalTransitionStyle = .FlipHorizontal
+                let navigationController = UINavigationController(rootViewController: homeViewNav)
+                self.presentViewController(navigationController, animated: true, completion: nil)
             }
         }
         

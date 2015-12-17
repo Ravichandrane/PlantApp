@@ -63,6 +63,23 @@ class PasswordForgotViewController: UIViewController, UITextFieldDelegate {
     
     func reset(sender: UIButton) {
         
+        let emailAdress = emailTextField.text
+        
+        if emailAdress!.isEmpty {
+            showSimpleAlertWithTitle("Email input empty", message: "Please fill your email adress", viewController: self)
+            return
+        }else{
+            PFUser.requestPasswordResetForEmailInBackground(emailAdress!, block: { (success: Bool, error: NSError?) -> Void in
+                if success {
+                    self.emailTextField.text = ""
+                    showSimpleAlertWithTitle("Email sent", message: "An email was sent to you \(emailAdress!)", viewController: self)
+                }else{
+                    showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
+                }
+            })
+        }
+        
+        
     }
 
 }

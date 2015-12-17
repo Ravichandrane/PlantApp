@@ -99,7 +99,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     // MARK: - Unwind
     
-    @IBAction func backLoginView(unwindSegue: UIStoryboardSegue) {}
+    @IBAction func backToView(unwindSegue: UIStoryboardSegue) {}
     
 }
 
