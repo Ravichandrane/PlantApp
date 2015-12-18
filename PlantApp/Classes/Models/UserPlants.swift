@@ -13,6 +13,7 @@ struct UserPlants {
     let id: String!
     let plantName: String!
     let variety: String!
+    let plant:PFRelation!
 }
 
 
@@ -27,8 +28,9 @@ struct UserPlantsDictionnary {
                 let id = object.objectId
                 let plantName = object.objectForKey("plantName") as! String
                 let variety = object.objectForKey("variety") as! String
+                let plant = object.objectForKey("plant") as! PFRelation
                 
-                list.append(UserPlants(id: id, plantName: plantName, variety: variety))
+                list.append(UserPlants(id: id, plantName: plantName, variety: variety, plant:plant))
                 
             }
         }

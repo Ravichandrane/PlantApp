@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class HomeCollectionViewCell: UICollectionViewCell {
     
@@ -16,6 +17,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var plantName: UILabel!
     @IBOutlet weak var information: UILabel!
     @IBOutlet weak var overlayView: UIView!
+    
+    var plant:PFObject?
     
     static let cellIdentifier = "homeCollectionViewCell"
     
@@ -30,6 +33,16 @@ class HomeCollectionViewCell: UICollectionViewCell {
     func parseData(data: UserPlants) {
         plantName.text = data.plantName
         plantStatus.image = UIImage(named: "\(data.variety)_happy")
+        
+        print(data.variety)
+        
+        let plant = data.plant.query()
+        plant.findObjectsInBackgroundWithBlock { (object:[PFObject]?, error:NSError?) -> Void in
+            if let name = object![0]["variety"]{
+                self.information.text = name as? String
+            }
+        }
+        
     }
     
     // MARK: - Init scroll effect
