@@ -23,6 +23,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var plantStatus: UIImageView!
     
     var plant:UserPlants?
+    var plantObject:PFObject?
     var plantParse:PFObject?
     
     // MARK: - View
@@ -44,6 +45,11 @@ class StatusViewController: UIViewController {
                             
                         }
                     }
+                }
+                
+                let plant = self.plant?.plant.query()
+                plant!.findObjectsInBackgroundWithBlock { (object:[PFObject]?, error:NSError?) -> Void in
+                    self.plantObject = object![0]
                 }
                 
             }
@@ -80,12 +86,25 @@ class StatusViewController: UIViewController {
             self.plantParse?.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
-                    
-                    switch self.circleProgress.progress*100 {
-                        case 30:
-                            self.plantStatus.image = UIImage(named: "\(self.plantParse!["variety"])_sad")
-                        default:
-                          break
+                    let progress = self.circleProgress.progress*100
+                    let nameVar = self.plantObject!.objectForKey("variety")!
+                    print(nameVar)
+                    print(progress)
+                    switch progress {
+                    case _ where progress < 30:
+                        let name = "thirst"
+                        print(name)
+                        self.plantStatus.image = UIImage(named: name)
+                    case _ where progress < 60:
+                        let name = "\(nameVar)_sad"
+                        print(name)
+                        self.plantStatus.image = UIImage(named: name)
+                    case _ where progress > 60:
+                        let name = "\(nameVar)_happy"
+                        print(name)
+                        self.plantStatus.image = UIImage(named: name)
+                    default:
+                        break
                     }
                     
                 } else {
