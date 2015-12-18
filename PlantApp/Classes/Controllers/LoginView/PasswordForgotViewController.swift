@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SwiftLoader
 
 class PasswordForgotViewController: UIViewController, UITextFieldDelegate {
 
@@ -63,12 +64,15 @@ class PasswordForgotViewController: UIViewController, UITextFieldDelegate {
     
     func reset(sender: UIButton) {
         
+        SwiftLoader.show(animated: true)
+        
         let emailAdress = emailTextField.text
         
         if emailAdress!.isEmpty {
+            SwiftLoader.hide()
             showSimpleAlertWithTitle("Email input empty", message: "Please fill your email adress", viewController: self)
-            return
         }else{
+            SwiftLoader.hide()
             PFUser.requestPasswordResetForEmailInBackground(emailAdress!, block: { (success: Bool, error: NSError?) -> Void in
                 if success {
                     self.emailTextField.text = ""

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftLoader
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, LocationServiceDelegate {
 
@@ -30,7 +31,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         LocationService.sharedInstance.delegate = self
-        plantCollectionView.reloadData()
+        getUserPlants()
     }
     
     override func viewDidLoad() {
@@ -38,7 +39,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         plantCollectionView.dataSource = self
         plantCollectionView.delegate = self
         styleView()
-    
     }
     
     // MARK: - Style View
@@ -46,7 +46,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func styleView() {
         plantCollectionView.backgroundColor = UIColor.clearColor()
         plantCollectionView.decelerationRate = UIScrollViewDecelerationRateFast
-        getUserPlants()
     }
     
     // MARK: - Weather Information
@@ -59,15 +58,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func getWeather(latitude: Double, longitude: Double) {
+        SwiftLoader.show(animated: true)
         POService.getCurrentWeather(latitude, userLongitude: longitude) { (response, error) -> () in
             if error != nil {
-                print("error")
+                showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
             }else{
                 if response != nil {
                     self.windSpeed.text = "\(response!.windSpeed) km/h"
                     self.iconState.image = UIImage(named: response!.icon)
                     self.humidity.text = "\(response!.humidity * 100) %"
                     self.temperature.text = "\(response!.temperature)°"
+                    SwiftLoader.hide()
                 }
             }
         }
@@ -76,7 +77,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     func getUserPlants() {
         POService.getUserPlants { (response, error) -> () in
             if error != nil {
-                print("error")
+                showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
             }else{
                 if response != nil {
                     if let userPlants = response {

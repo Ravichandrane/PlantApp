@@ -11,16 +11,12 @@
 		4108526A1C22E17F00860F02 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852691C22E17F00860F02 /* LoginViewController.swift */; };
 		4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526B1C22E39400860F02 /* CustomTextField.swift */; };
 		4108526E1C22E3AF00860F02 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526D1C22E3AF00860F02 /* Animation.swift */; };
-		410852711C22F37C00860F02 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852701C22F37C00860F02 /* SignUpViewController.swift */; };
-		410852731C22F45600860F02 /* PasswordForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852721C22F45600860F02 /* PasswordForgotViewController.swift */; };
 		410852751C230BD400860F02 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852741C230BD400860F02 /* SettingsTableViewController.swift */; };
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
 		413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413773211C20EEC900B8F704 /* ApiKeys.plist */; };
 		413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413773231C20EF9C00B8F704 /* ValueForApiKey.swift */; };
 		4143846D1C215940005F2CD0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143846C1C215940005F2CD0 /* Weather.swift */; };
-		414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */; };
 		414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */; };
-		4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */; };
 		4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847D1C21DAD2005F2CD0 /* CustomElement.swift */; };
 		414384801C220902005F2CD0 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143847F1C220902005F2CD0 /* LocationService.swift */; };
 		414384821C2226D2005F2CD0 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384811C2226D2005F2CD0 /* AlertView.swift */; };
@@ -29,6 +25,12 @@
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
 		415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */; };
+		419E253F1C2398CE00EB310F /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E253E1C2398CE00EB310F /* LocalStore.swift */; };
+		419E25411C2398E300EB310F /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25401C2398E300EB310F /* CreatePlantViewController.swift */; };
+		419E25431C2398F000EB310F /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25421C2398F000EB310F /* AddPlantViewController.swift */; };
+		419E25451C23990F00EB310F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25441C23990F00EB310F /* OnboardingViewController.swift */; };
+		419E25481C23994100EB310F /* PasswordForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25461C23994100EB310F /* PasswordForgotViewController.swift */; };
+		419E25491C23994100EB310F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25471C23994100EB310F /* SignUpViewController.swift */; };
 		41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3A51C1FBB3D0022FA34 /* HomeCollectionViewCell.swift */; };
 		41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3A71C1FBB3D0022FA34 /* NotificationTableViewCell.swift */; };
 		41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3AA1C1FBB3D0022FA34 /* HomeViewController.swift */; };
@@ -40,11 +42,9 @@
 		41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */; };
 		41B8A1021C2364D000F72943 /* UserPlants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B8A1011C2364D000F72943 /* UserPlants.swift */; };
 		41BA24601C205BEC00732871 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA245F1C205BEC00732871 /* ShadowView.swift */; };
-		41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24671C20B37700732871 /* OnboardingViewController.swift */; };
 		41BA246A1C20B83500732871 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24691C20B83500732871 /* Gradient.swift */; };
 		41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */; };
 		41BA24701C20BED000732871 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA246F1C20BED000732871 /* Onboarding.swift */; };
-		41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA24711C20E1AA00732871 /* LocalStore.swift */; };
 		44787A6BA0E0B7585C6C3DB3 /* Pods_PlantApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */; };
 		9BE8C0EE1C2368A6000381CF /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE8C0ED1C2368A6000381CF /* CircleProgressView.swift */; };
 /* End PBXBuildFile section */
@@ -54,16 +54,12 @@
 		410852691C22E17F00860F02 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = LoginView/LoginViewController.swift; sourceTree = "<group>"; };
 		4108526B1C22E39400860F02 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4108526D1C22E3AF00860F02 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		410852701C22F37C00860F02 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		410852721C22F45600860F02 /* PasswordForgotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordForgotViewController.swift; sourceTree = "<group>"; };
 		410852741C230BD400860F02 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
 		413773211C20EEC900B8F704 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueForApiKey.swift; sourceTree = "<group>"; };
 		4143846C1C215940005F2CD0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantViewController.swift; sourceTree = "<group>"; };
 		414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantCollectionViewCell.swift; sourceTree = "<group>"; };
-		4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePlantViewController.swift; sourceTree = "<group>"; };
 		4143847D1C21DAD2005F2CD0 /* CustomElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElement.swift; sourceTree = "<group>"; };
 		4143847F1C220902005F2CD0 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -75,6 +71,12 @@
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415ACEEA1C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		415ACEEC1C1F0326003611B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419E253E1C2398CE00EB310F /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		419E25401C2398E300EB310F /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePlantViewController.swift; path = CreatePlantView/CreatePlantViewController.swift; sourceTree = "<group>"; };
+		419E25421C2398F000EB310F /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPlantViewController.swift; path = AddPlantView/AddPlantViewController.swift; sourceTree = "<group>"; };
+		419E25441C23990F00EB310F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = OnboardingView/OnboardingViewController.swift; sourceTree = "<group>"; };
+		419E25461C23994100EB310F /* PasswordForgotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordForgotViewController.swift; path = LoginView/PasswordForgotViewController.swift; sourceTree = "<group>"; };
+		419E25471C23994100EB310F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = LoginView/SignUpViewController.swift; sourceTree = "<group>"; };
 		41B3F3A51C1FBB3D0022FA34 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		41B3F3A71C1FBB3D0022FA34 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		41B3F3AA1C1FBB3D0022FA34 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -86,11 +88,9 @@
 		41B3F3B11C1FBB3D0022FA34 /* UIColorFromRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorFromRGBA.swift; sourceTree = "<group>"; };
 		41B8A1011C2364D000F72943 /* UserPlants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPlants.swift; sourceTree = "<group>"; };
 		41BA245F1C205BEC00732871 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		41BA24671C20B37700732871 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		41BA24691C20B83500732871 /* Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		41BA246D1C20BD1C00732871 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		41BA246F1C20BED000732871 /* Onboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		41BA24711C20E1AA00732871 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalStore.swift; path = ../Helpers/LocalStore.swift; sourceTree = "<group>"; };
 		9BE8C0ED1C2368A6000381CF /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
 		9CBACC4E5908E3F89EA9AF81 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		AE2A88B0003435CA73064585 /* Pods_PlantApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlantApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				410852691C22E17F00860F02 /* LoginViewController.swift */,
-				410852701C22F37C00860F02 /* SignUpViewController.swift */,
-				410852721C22F45600860F02 /* PasswordForgotViewController.swift */,
+				419E25471C23994100EB310F /* SignUpViewController.swift */,
+				419E25461C23994100EB310F /* PasswordForgotViewController.swift */,
 			);
 			name = LoginView;
 			sourceTree = "<group>";
@@ -127,20 +127,20 @@
 			name = StatusView;
 			sourceTree = "<group>";
 		};
-		414384711C21BCA8005F2CD0 /* AddView */ = {
+		414384711C21BCA8005F2CD0 /* AddPlantView */ = {
 			isa = PBXGroup;
 			children = (
-				414384741C21BCE9005F2CD0 /* AddPlantViewController.swift */,
+				419E25421C2398F000EB310F /* AddPlantViewController.swift */,
 			);
-			name = AddView;
+			name = AddPlantView;
 			sourceTree = "<group>";
 		};
-		414384781C21C677005F2CD0 /* CreateView */ = {
+		414384781C21C677005F2CD0 /* CreatePlantView */ = {
 			isa = PBXGroup;
 			children = (
-				4143847B1C21C722005F2CD0 /* CreatePlantViewController.swift */,
+				419E25401C2398E300EB310F /* CreatePlantViewController.swift */,
 			);
-			name = CreateView;
+			name = CreatePlantView;
 			sourceTree = "<group>";
 		};
 		415ACED41C1F0326003611B1 = {
@@ -201,7 +201,7 @@
 			children = (
 				4137731F1C20ED9500B8F704 /* POService.swift */,
 				41BA246F1C20BED000732871 /* Onboarding.swift */,
-				41BA24711C20E1AA00732871 /* LocalStore.swift */,
+				419E253E1C2398CE00EB310F /* LocalStore.swift */,
 			);
 			name = API;
 			path = Classes/API;
@@ -242,8 +242,8 @@
 				410852661C22E13100860F02 /* LoginView */,
 				41BA24641C20B34700732871 /* HomeView */,
 				414384701C21BC6A005F2CD0 /* StatusView */,
-				414384711C21BCA8005F2CD0 /* AddView */,
-				414384781C21C677005F2CD0 /* CreateView */,
+				414384711C21BCA8005F2CD0 /* AddPlantView */,
+				414384781C21C677005F2CD0 /* CreatePlantView */,
 			);
 			name = Controllers;
 			path = Classes/Controllers;
@@ -294,7 +294,7 @@
 		41BA24631C20B33A00732871 /* OnboardingView */ = {
 			isa = PBXGroup;
 			children = (
-				41BA24671C20B37700732871 /* OnboardingViewController.swift */,
+				419E25441C23990F00EB310F /* OnboardingViewController.swift */,
 			);
 			name = OnboardingView;
 			sourceTree = "<group>";
@@ -468,31 +468,31 @@
 				4143847E1C21DAD2005F2CD0 /* CustomElement.swift in Sources */,
 				4108526E1C22E3AF00860F02 /* Animation.swift in Sources */,
 				410852751C230BD400860F02 /* SettingsTableViewController.swift in Sources */,
+				419E253F1C2398CE00EB310F /* LocalStore.swift in Sources */,
 				4108526A1C22E17F00860F02 /* LoginViewController.swift in Sources */,
+				419E25481C23994100EB310F /* PasswordForgotViewController.swift in Sources */,
 				41BA246E1C20BD1C00732871 /* OnboardingCollectionViewCell.swift in Sources */,
 				4143846D1C215940005F2CD0 /* Weather.swift in Sources */,
 				41B3F3B41C1FBB3D0022FA34 /* NotificationTableViewCell.swift in Sources */,
 				41B3F3B91C1FBB3D0022FA34 /* HomeLayout.swift in Sources */,
 				410852651C22B3E200860F02 /* Plants.swift in Sources */,
-				41BA24721C20E1AA00732871 /* LocalStore.swift in Sources */,
 				415ACEE11C1F0326003611B1 /* AppDelegate.swift in Sources */,
-				414384751C21BCE9005F2CD0 /* AddPlantViewController.swift in Sources */,
 				9BE8C0EE1C2368A6000381CF /* CircleProgressView.swift in Sources */,
 				4108526C1C22E39400860F02 /* CustomTextField.swift in Sources */,
 				41B3F3B31C1FBB3D0022FA34 /* HomeCollectionViewCell.swift in Sources */,
 				414384841C222FDA005F2CD0 /* weatherIconFromString.swift in Sources */,
 				414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */,
-				4143847C1C21C722005F2CD0 /* CreatePlantViewController.swift in Sources */,
 				41B3F3B81C1FBB3D0022FA34 /* ViewController.swift in Sources */,
 				41B3F3B71C1FBB3D0022FA34 /* StatusViewController.swift in Sources */,
+				419E25411C2398E300EB310F /* CreatePlantViewController.swift in Sources */,
 				41B3F3B51C1FBB3D0022FA34 /* HomeViewController.swift in Sources */,
-				41BA24681C20B37700732871 /* OnboardingViewController.swift in Sources */,
 				413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */,
 				41BA246A1C20B83500732871 /* Gradient.swift in Sources */,
 				41B3F3BA1C1FBB3D0022FA34 /* NavigationBarIcon.swift in Sources */,
-				410852731C22F45600860F02 /* PasswordForgotViewController.swift in Sources */,
-				410852711C22F37C00860F02 /* SignUpViewController.swift in Sources */,
+				419E25491C23994100EB310F /* SignUpViewController.swift in Sources */,
+				419E25431C2398F000EB310F /* AddPlantViewController.swift in Sources */,
 				41BA24701C20BED000732871 /* Onboarding.swift in Sources */,
+				419E25451C23990F00EB310F /* OnboardingViewController.swift in Sources */,
 				41B3F3BB1C1FBB3D0022FA34 /* UIColorFromRGBA.swift in Sources */,
 				414384821C2226D2005F2CD0 /* AlertView.swift in Sources */,
 			);

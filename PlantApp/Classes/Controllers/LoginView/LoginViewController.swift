@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SwiftLoader
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -92,16 +93,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Action
     
     func login(sender: UIButton) {
+        SwiftLoader.show(animated: true)
         PFUser.logInWithUsernameInBackground(emailTextField.text!, password : passwordTextField.text!) {
             (user: PFUser?, error: NSError?) -> Void in
-            if user != nil {
-                let homeViewNav  = self.storyboard?.instantiateViewControllerWithIdentifier("mainView") as! ViewController
-                homeViewNav.modalTransitionStyle = .FlipHorizontal
-                let navigationController = UINavigationController(rootViewController: homeViewNav)
-                self.presentViewController(navigationController, animated: true, completion: nil)
-            } else {
-                showSimpleAlertWithTitle("MyGarden", message: "Oups something wrong !", viewController: self)
-            }
+                if user != nil {
+                    SwiftLoader.hide()
+                    let homeViewNav  = self.storyboard?.instantiateViewControllerWithIdentifier("mainView") as! ViewController
+                    homeViewNav.modalTransitionStyle = .FlipHorizontal
+                    let navigationController = UINavigationController(rootViewController: homeViewNav)
+                    self.presentViewController(navigationController, animated: true, completion: nil)
+                } else {
+                    SwiftLoader.hide()
+                    showSimpleAlertWithTitle("MyGarden", message: "Oups something wrong !", viewController: self)
+                }
         }
     }
     

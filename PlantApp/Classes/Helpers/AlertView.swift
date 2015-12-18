@@ -28,3 +28,12 @@ func showSimpleAlertWithSettings(title: String!, message: String, viewController
     alert.addAction(setting)
     viewController.presentViewController(alert, animated: true, completion: nil)
 }
+
+func comeBack(title: String!, message: String, viewController: UIViewController, backTo: String) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+    let action = UIAlertAction(title: "Ok", style: .Cancel) { (UIAlertAction) -> Void in
+        viewController.performSegueWithIdentifier(backTo, sender: viewController)
+    }
+    alert.addAction(action)
+    viewController.presentViewController(alert, animated: true, completion: nil)
+}

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftLoader
 
 class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIGestureRecognizerDelegate {
 
@@ -44,15 +45,18 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
     // MARK: - Get Plants
     
     func getPlants() {
+        SwiftLoader.show(animated: true)
         POService.getPlants { (response, error) -> () in
             if error != nil {
-                print("error")
+                SwiftLoader.hide()
+                showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
             }else{
                 if response != nil {
                     if let plants = response {
                         self.plants = plants
                         self.plantList = plants.list
                         self.addPlantCollectionView.reloadData()
+                        SwiftLoader.hide()
                     }
                 }
             }
@@ -98,8 +102,6 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
     func dissmissView() {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    // MARK: - Action
     
     // MARK: - Unwind
     

@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SwiftLoader
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
 
@@ -72,7 +73,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     // Action
     
     func signUp(sender: UIButton) {
-
+        
+        SwiftLoader.show(animated: true)
+        
         let user = PFUser()
         user.username = userName.text
         user.email = userEmail.text
@@ -81,9 +84,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
             if let error = error {
+                SwiftLoader.hide()
                 let errorString = error.userInfo["error"] as? String
                 showSimpleAlertWithTitle("Error", message: errorString!, viewController: self)
             } else {
+                SwiftLoader.hide()
                 let homeViewNav  = self.storyboard?.instantiateViewControllerWithIdentifier("mainView") as! ViewController
                 homeViewNav.modalTransitionStyle = .FlipHorizontal
                 let navigationController = UINavigationController(rootViewController: homeViewNav)

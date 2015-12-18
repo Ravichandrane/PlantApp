@@ -55,18 +55,17 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
-    
     func customTextField() {
+        giveName.autocapitalizationType = .None
         giveName.borderStyle = UITextBorderStyle.None
         giveName.placeholder = "Your plant name"
-        giveName.autocapitalizationType = .None
         giveName.tintColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
         giveName.textColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
     }
     
     func customButton() {
         addButton.titleLabel?.font = UIFont.systemFontOfSize(20)
-        addButton.setTitle("Ajouter", forState: UIControlState.Normal)
+        addButton.setTitle("Add", forState: UIControlState.Normal)
         addButton.tintColor = UIColorFromRGBA("15E9A6", alpha: 1.0)
         addButton.layer.borderColor = UIColorFromRGBA("15E9A6", alpha: 1.0).CGColor
         addButton.layer.borderWidth = 2
@@ -77,20 +76,27 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
     // Action
     
     func addPlant(sender: UIButton) {
-                
-        let havePlant = PFObject(className:"Have")
-        havePlant.relationForKey("user").addObject(PFUser.currentUser()! as PFObject)
-        havePlant.relationForKey("plant").addObject((plant?.object)! as PFObject)
-        havePlant["variety"] = plant!.variety
-        havePlant["plantName"] = giveName.text
-        havePlant.saveInBackgroundWithBlock {
-            (success: Bool, error: NSError?) -> Void in
-            if (success) {
-                print("Saved")
-            } else {
-                print("Error")
+        
+        let plantName = giveName.text
+        
+        if plantName!.isEmpty {
+            showSimpleAlertWithTitle("Email input empty", message: "Please fill your email adress", viewController: self)
+        }else{
+            let havePlant = PFObject(className:"Have")
+            havePlant.relationForKey("user").addObject(PFUser.currentUser()! as PFObject)
+            havePlant.relationForKey("plant").addObject((plant?.object)! as PFObject)
+            havePlant["variety"] = plant!.variety
+            havePlant["plantName"] = giveName.text
+            havePlant.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                    comeBack("Plant added !", message: "", viewController: self, backTo: "backToAddPlantView")
+                } else {
+                    showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
+                }
             }
         }
+        
     }
     
     func previousView(sender: UIButton) {

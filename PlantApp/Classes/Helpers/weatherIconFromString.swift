@@ -6,7 +6,7 @@
 //  Copyright © 2015 Ravichandrane Rajendran. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 func weatherIconFromString(iconName: String) -> String {
     

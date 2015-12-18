@@ -41,7 +41,7 @@ class HomeLayout: UICollectionViewLayout {
         return collectionView!.numberOfItemsInSection(0)
     }
     
-    // MARK: UICollectionViewLayout
+    // MARK: UICollectionViewLayout 
     
     override func collectionViewContentSize() -> CGSize {
         let contentHeight = (CGFloat(numberOfItems) * dragOffset) + (height - dragOffset)

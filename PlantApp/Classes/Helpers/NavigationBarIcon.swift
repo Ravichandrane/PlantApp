@@ -6,7 +6,6 @@
 //  Copyright © 2015 Ravichandrane Rajendran. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 func navigationIcon(name: String, action: String, target: AnyObject, navigationItem: UINavigationItem, position: String) {
