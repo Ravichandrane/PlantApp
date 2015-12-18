@@ -14,7 +14,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - IBOutle & Variable
     
     let items = ["Home", "Settings", "Notifications"]
-    var menuView: BTNavigationDropdownMenu!
     
     @IBOutlet weak var homeView: UIView!
     @IBOutlet weak var statusView: UIView!

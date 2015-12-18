@@ -13,14 +13,29 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="fT8-BS-17c">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fT8-BS-17c" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="6SB-OJ-3nk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="fT8-BS-17c" secondAttribute="bottom" id="fFG-wV-REo"/>
+                            <constraint firstAttribute="trailing" secondItem="fT8-BS-17c" secondAttribute="trailing" id="nOf-ZU-7gg"/>
+                            <constraint firstItem="fT8-BS-17c" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="weP-UQ-Cxb"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splashScreen" width="320" height="568"/>
+    </resources>
 </document>

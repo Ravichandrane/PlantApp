@@ -56,5 +56,4 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
         return cell
     }
     
-
 }

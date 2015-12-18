@@ -36,6 +36,7 @@ class AddPlantCollectionViewCell: UICollectionViewCell {
     
     func parseData(data: Plants) {
         plantName.text = data.variety
+        print(data.variety)
         plantImage.image = UIImage(named: "\(data.variety)_happy")
     }
     

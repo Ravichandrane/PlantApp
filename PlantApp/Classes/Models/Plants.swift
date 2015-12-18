@@ -26,6 +26,7 @@ struct PlantsDictionnary {
         
         if let objects = objects {
             for object in objects {
+                
                 let object = object
                 let id = object.objectId
                 let cold = object.objectForKey("cold") as! Int

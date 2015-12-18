@@ -85,7 +85,6 @@ class CreatePlantViewController: UIViewController, UITextFieldDelegate {
             let havePlant = PFObject(className:"Have")
             havePlant.relationForKey("user").addObject(PFUser.currentUser()! as PFObject)
             havePlant.relationForKey("plant").addObject((plant?.object)! as PFObject)
-            havePlant["variety"] = plant!.variety
             havePlant["plantName"] = giveName.text
             havePlant.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in

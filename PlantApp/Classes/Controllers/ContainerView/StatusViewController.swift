@@ -20,6 +20,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var toWater: UIView!
     @IBOutlet weak var infoText: UILabel!
     @IBOutlet var plantName: UILabel!
+    @IBOutlet weak var plantStatus: UIImageView!
     
     var plant:UserPlants?
     var plantParse:PFObject?
@@ -79,9 +80,16 @@ class StatusViewController: UIViewController {
             self.plantParse?.saveInBackgroundWithBlock {
                 (success: Bool, error: NSError?) -> Void in
                 if (success) {
-                    print("Saved")
+                    
+                    switch self.circleProgress.progress*100 {
+                        case 30:
+                            self.plantStatus.image = UIImage(named: "\(self.plantParse!["variety"])_sad")
+                        default:
+                          break
+                    }
+                    
                 } else {
-                    print("Error")
+                    showSimpleAlertWithTitle("Oups something wrong !", message: "\(error)", viewController: self)
                 }
             }
         }

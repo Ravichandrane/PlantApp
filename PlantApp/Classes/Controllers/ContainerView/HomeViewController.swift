@@ -74,6 +74,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
     }
     
+    // MARK: - User Plants Information
+    
     func getUserPlants() {
         POService.getUserPlants { (response, error) -> () in
             if error != nil {

@@ -104,7 +104,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     self.presentViewController(navigationController, animated: true, completion: nil)
                 } else {
                     SwiftLoader.hide()
-                    showSimpleAlertWithTitle("MyGarden", message: "Oups something wrong !", viewController: self)
+                    showSimpleAlertWithTitle("My Garden", message: "Oups something wrong !", viewController: self)
                 }
         }
     }

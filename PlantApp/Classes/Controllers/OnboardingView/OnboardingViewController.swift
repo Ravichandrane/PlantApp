@@ -16,7 +16,7 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var startButton: UIButton!
     var onboardingViewData: [[String:AnyObject]] = []
-
+    
     // MARK: - View
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -45,7 +45,6 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
         onboardingCollectionView.showsHorizontalScrollIndicator = false
         onboardingCollectionView.pagingEnabled = true
         onboardingCollectionView.bounces = false
-        
         onboardingViewData = onboardingData
         
         styleView()
@@ -54,13 +53,14 @@ class OnboardingViewController: UIViewController, UICollectionViewDataSource, UI
     // MARK: - Style View
     
     func styleView() {
+        
         pageControl.numberOfPages = onboardingViewData.count
         pageControl.pageIndicatorTintColor = UIColorFromRGBA("2F3043", alpha: 0.5)
         startButton.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: 14)
         startButton.titleLabel?.textColor = UIColorFromRGBA("2F3043", alpha: 1.0)
         startButton.setAttributedTitle(NSAttributedString(string: "Lets go!".uppercaseString), forState: UIControlState.Normal)
-        
         startButton.addTarget(self, action: "startAdventure:", forControlEvents: .TouchUpInside)
+        
     }
     
     // MARK: - ScrollView Delegate

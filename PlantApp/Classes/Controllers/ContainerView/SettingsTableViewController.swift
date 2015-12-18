@@ -51,6 +51,4 @@ class SettingsTableViewController: UITableViewController {
         self.presentViewController(navigationController, animated: true, completion: nil)
     }
     
-    
-
 }

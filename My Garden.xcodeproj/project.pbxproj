@@ -13,7 +13,6 @@
 		4108526E1C22E3AF00860F02 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108526D1C22E3AF00860F02 /* Animation.swift */; };
 		410852751C230BD400860F02 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410852741C230BD400860F02 /* SettingsTableViewController.swift */; };
 		413773201C20ED9500B8F704 /* POService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4137731F1C20ED9500B8F704 /* POService.swift */; };
-		413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 413773211C20EEC900B8F704 /* ApiKeys.plist */; };
 		413773241C20EF9C00B8F704 /* ValueForApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413773231C20EF9C00B8F704 /* ValueForApiKey.swift */; };
 		4143846D1C215940005F2CD0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4143846C1C215940005F2CD0 /* Weather.swift */; };
 		414384771C21C120005F2CD0 /* AddPlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */; };
@@ -25,6 +24,7 @@
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
 		415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */; };
+		415ED87A1C2414000039FEFB /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415ED8791C2414000039FEFB /* ApiKeys.plist */; };
 		419E253F1C2398CE00EB310F /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E253E1C2398CE00EB310F /* LocalStore.swift */; };
 		419E25411C2398E300EB310F /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25401C2398E300EB310F /* CreatePlantViewController.swift */; };
 		419E25431C2398F000EB310F /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25421C2398F000EB310F /* AddPlantViewController.swift */; };
@@ -56,7 +56,6 @@
 		4108526D1C22E3AF00860F02 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		410852741C230BD400860F02 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		4137731F1C20ED9500B8F704 /* POService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POService.swift; sourceTree = "<group>"; };
-		413773211C20EEC900B8F704 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		413773231C20EF9C00B8F704 /* ValueForApiKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueForApiKey.swift; sourceTree = "<group>"; };
 		4143846C1C215940005F2CD0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		414384761C21C120005F2CD0 /* AddPlantCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlantCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -65,12 +64,13 @@
 		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		414384831C222FDA005F2CD0 /* weatherIconFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherIconFromString.swift; sourceTree = "<group>"; };
 		414384851C223714005F2CD0 /* PO Fleur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PO Fleur.entitlements"; sourceTree = "<group>"; };
-		415ACEDD1C1F0326003611B1 /* PlantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		415ACEDD1C1F0326003611B1 /* My Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415ACEEA1C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		415ACEEC1C1F0326003611B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		415ED8791C2414000039FEFB /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		419E253E1C2398CE00EB310F /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		419E25401C2398E300EB310F /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePlantViewController.swift; path = CreatePlantView/CreatePlantViewController.swift; sourceTree = "<group>"; };
 		419E25421C2398F000EB310F /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPlantViewController.swift; path = AddPlantView/AddPlantViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		415ACEDE1C1F0326003611B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				415ACEDD1C1F0326003611B1 /* PlantApp.app */,
+				415ACEDD1C1F0326003611B1 /* My Garden.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				415ACEEC1C1F0326003611B1 /* Info.plist */,
-				413773211C20EEC900B8F704 /* ApiKeys.plist */,
+				415ED8791C2414000039FEFB /* ApiKeys.plist */,
 				415ACEE01C1F0326003611B1 /* AppDelegate.swift */,
 				41B3F3B21C1FBB3D0022FA34 /* Models */,
 				415ACEF21C1F0339003611B1 /* Views */,
@@ -328,9 +328,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415ACEDC1C1F0326003611B1 /* PlantApp */ = {
+		415ACEDC1C1F0326003611B1 /* My Garden */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */;
+			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "My Garden" */;
 			buildPhases = (
 				DD81805569C253E1587F053A /* Check Pods Manifest.lock */,
 				415ACED91C1F0326003611B1 /* Sources */,
@@ -343,9 +343,9 @@
 			);
 			dependencies = (
 			);
-			name = PlantApp;
+			name = "My Garden";
 			productName = PlantApp;
-			productReference = 415ACEDD1C1F0326003611B1 /* PlantApp.app */;
+			productReference = 415ACEDD1C1F0326003611B1 /* My Garden.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -375,7 +375,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */;
+			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "My Garden" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -388,7 +388,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				415ACEDC1C1F0326003611B1 /* PlantApp */,
+				415ACEDC1C1F0326003611B1 /* My Garden */,
 			);
 		};
 /* End PBXProject section */
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */,
-				413773221C20EEC900B8F704 /* ApiKeys.plist in Resources */,
+				415ED87A1C2414000039FEFB /* ApiKeys.plist in Resources */,
 				415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */,
 				415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */,
 			);
@@ -613,7 +613,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = PlantApp;
+				PRODUCT_NAME = "My Garden";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -630,7 +630,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = PlantApp;
+				PRODUCT_NAME = "My Garden";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -638,7 +638,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */ = {
+		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "My Garden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEED1C1F0326003611B1 /* Debug */,
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */ = {
+		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "My Garden" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEF01C1F0326003611B1 /* Debug */,

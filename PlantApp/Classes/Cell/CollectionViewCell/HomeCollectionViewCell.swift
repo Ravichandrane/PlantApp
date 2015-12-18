@@ -18,28 +18,21 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var information: UILabel!
     @IBOutlet weak var overlayView: UIView!
     
-    var plant:PFObject?
-    
     static let cellIdentifier = "homeCollectionViewCell"
-    
-    // MARK: - Awake
-    
-    override func awakeFromNib() {
-        
-    }
     
     // MARK: - Parse data
     
     func parseData(data: UserPlants) {
-        plantName.text = data.plantName
-        plantStatus.image = UIImage(named: "\(data.variety)_happy")
-        
-        print(data.variety)
         
         let plant = data.plant.query()
+        
+        plantName.text = data.plantName
+        
         plant.findObjectsInBackgroundWithBlock { (object:[PFObject]?, error:NSError?) -> Void in
             if let name = object![0]["variety"]{
-                self.information.text = name as? String
+                let plantName = name as? String
+                self.information.text = plantName
+                self.plantStatus.image = UIImage(named: "\(plantName!)_happy")
             }
         }
         

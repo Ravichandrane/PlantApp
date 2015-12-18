@@ -52,11 +52,11 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
                 showSimpleAlertWithTitle("Oups something wrong", message: "\(error)", viewController: self)
             }else{
                 if response != nil {
+                    SwiftLoader.hide()
                     if let plants = response {
                         self.plants = plants
                         self.plantList = plants.list
                         self.addPlantCollectionView.reloadData()
-                        SwiftLoader.hide()
                     }
                 }
             }
@@ -95,7 +95,6 @@ class AddPlantViewController: UIViewController, UICollectionViewDataSource, UICo
         createView.plant = plantList[indexPath.row]
         self.navigationController?.pushViewController(createView, animated: true)
     }
-    
     
     // MARK: - Function
     
