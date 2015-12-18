@@ -64,7 +64,7 @@
 		414384811C2226D2005F2CD0 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		414384831C222FDA005F2CD0 /* weatherIconFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherIconFromString.swift; sourceTree = "<group>"; };
 		414384851C223714005F2CD0 /* PO Fleur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PO Fleur.entitlements"; sourceTree = "<group>"; };
-		415ACEDD1C1F0326003611B1 /* My Garden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Garden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		415ACEDD1C1F0326003611B1 /* PlantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		415ACEE01C1F0326003611B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		415ACEE51C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		415ACEDE1C1F0326003611B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				415ACEDD1C1F0326003611B1 /* My Garden.app */,
+				415ACEDD1C1F0326003611B1 /* PlantApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -328,9 +328,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		415ACEDC1C1F0326003611B1 /* My Garden */ = {
+		415ACEDC1C1F0326003611B1 /* PlantApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "My Garden" */;
+			buildConfigurationList = 415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */;
 			buildPhases = (
 				DD81805569C253E1587F053A /* Check Pods Manifest.lock */,
 				415ACED91C1F0326003611B1 /* Sources */,
@@ -343,9 +343,9 @@
 			);
 			dependencies = (
 			);
-			name = "My Garden";
+			name = PlantApp;
 			productName = PlantApp;
-			productReference = 415ACEDD1C1F0326003611B1 /* My Garden.app */;
+			productReference = 415ACEDD1C1F0326003611B1 /* PlantApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -375,7 +375,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "My Garden" */;
+			buildConfigurationList = 415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -388,7 +388,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				415ACEDC1C1F0326003611B1 /* My Garden */,
+				415ACEDC1C1F0326003611B1 /* PlantApp */,
 			);
 		};
 /* End PBXProject section */
@@ -613,7 +613,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "My Garden";
+				PRODUCT_NAME = PlantApp;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -630,7 +630,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ravirajendran.PlantApp;
-				PRODUCT_NAME = "My Garden";
+				PRODUCT_NAME = PlantApp;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -638,7 +638,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "My Garden" */ = {
+		415ACED81C1F0326003611B1 /* Build configuration list for PBXProject "PlantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEED1C1F0326003611B1 /* Debug */,
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "My Garden" */ = {
+		415ACEEF1C1F0326003611B1 /* Build configuration list for PBXNativeTarget "PlantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				415ACEF01C1F0326003611B1 /* Debug */,
