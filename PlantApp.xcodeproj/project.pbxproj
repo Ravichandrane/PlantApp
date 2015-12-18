@@ -24,7 +24,7 @@
 		415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE41C1F0326003611B1 /* Main.storyboard */; };
 		415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE71C1F0326003611B1 /* Assets.xcassets */; };
 		415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415ACEE91C1F0326003611B1 /* LaunchScreen.storyboard */; };
-		415ED87A1C2414000039FEFB /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415ED8791C2414000039FEFB /* ApiKeys.plist */; };
+		415ED87C1C24364F0039FEFB /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 415ED87B1C24364F0039FEFB /* ApiKeys.plist */; };
 		419E253F1C2398CE00EB310F /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E253E1C2398CE00EB310F /* LocalStore.swift */; };
 		419E25411C2398E300EB310F /* CreatePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25401C2398E300EB310F /* CreatePlantViewController.swift */; };
 		419E25431C2398F000EB310F /* AddPlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E25421C2398F000EB310F /* AddPlantViewController.swift */; };
@@ -70,7 +70,7 @@
 		415ACEE71C1F0326003611B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		415ACEEA1C1F0326003611B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		415ACEEC1C1F0326003611B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		415ED8791C2414000039FEFB /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		415ED87B1C24364F0039FEFB /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		419E253E1C2398CE00EB310F /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		419E25401C2398E300EB310F /* CreatePlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreatePlantViewController.swift; path = CreatePlantView/CreatePlantViewController.swift; sourceTree = "<group>"; };
 		419E25421C2398F000EB310F /* AddPlantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPlantViewController.swift; path = AddPlantView/AddPlantViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				415ACEEC1C1F0326003611B1 /* Info.plist */,
-				415ED8791C2414000039FEFB /* ApiKeys.plist */,
+				415ED87B1C24364F0039FEFB /* ApiKeys.plist */,
 				415ACEE01C1F0326003611B1 /* AppDelegate.swift */,
 				41B3F3B21C1FBB3D0022FA34 /* Models */,
 				415ACEF21C1F0339003611B1 /* Views */,
@@ -399,7 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415ACEEB1C1F0326003611B1 /* LaunchScreen.storyboard in Resources */,
-				415ED87A1C2414000039FEFB /* ApiKeys.plist in Resources */,
+				415ED87C1C24364F0039FEFB /* ApiKeys.plist in Resources */,
 				415ACEE81C1F0326003611B1 /* Assets.xcassets in Resources */,
 				415ACEE61C1F0326003611B1 /* Main.storyboard in Resources */,
 			);
